@@ -9,6 +9,14 @@ Following keyboards are supported.
 - ergodox_ez
 - lets_split
 
+## Install
+
+Keymapviz works with Python3.
+
+```sh
+$ pip install -r requirements.txt
+```
+
 ## Usage
 
 Output ascii art.
