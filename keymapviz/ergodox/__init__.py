@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 keymap_keyword = '(?:LAYOUT_ergodox|KEYMAP|KEYMAP_80)'
-layout_editor_json = 'keymapviz/ergodox/layout_editor.json'
+layout_editor_json = 'ergodox/layout_editor.json'
 
 ascii_art = '''
 /*

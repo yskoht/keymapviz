@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import io
+import os
 import sys
 import json
 
@@ -76,6 +77,8 @@ class Keymapviz():
 
 
     def layout_editor_json(self):
-        json_ = json.load(open(self.keyboard.layout_editor_json))
+        path_ = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(path_, self.keyboard.layout_editor_json)) as f:
+            json_ = json.load(f)
         return [self.__json_format(json_, _) for _ in self.keymaps]
 
