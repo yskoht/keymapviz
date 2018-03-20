@@ -9,11 +9,13 @@ import regex as re
 
 import keymapviz.ergodox
 import keymapviz.lets_split
+import keymapviz.helix
 
 
 KEYBOARDS = {
     'ergodox': keymapviz.ergodox,
     'ergodox_ez': keymapviz.ergodox,
+    'helix': keymapviz.helix,
     'lets_split': keymapviz.lets_split
 }
 
