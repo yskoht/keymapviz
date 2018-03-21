@@ -22,13 +22,14 @@ KEYBOARDS = {
 
 class Keymapviz():
     def __init__(self, keyboard, keymap_c, legends = None):
+        self.__keymap_c = keymap_c.read()
         self.keyboard = KEYBOARDS[keyboard]
-        self.keymaps = self.__parse_keymap_c(keymap_c)
+        self.keymaps = self.__parse_keymap_c()
         self.legends = legends if legends else {}
 
 
-    def __parse_keymap_c(self, keymap_c):
-        src = [_ for _ in keymap_c]
+    def __parse_keymap_c(self):
+        src = self.__keymap_c.split('\n')
         src = [re.sub(r'\s*//.*$', '', _) for _ in src]  # remove line comment
         src = [_.rstrip() for _ in src]                  # remove CRLF
         src = ''.join(src)
@@ -56,7 +57,7 @@ class Keymapviz():
             n = int(s) if s.isdigit() else i
             len_ = len(match)
             aa = aa.replace(match, '{{{0}:^{1}.{1}}}'.format(n, len_), 1)
-        return aa
+        return aa.lstrip().rstrip()
 
 
     def __legends(self, keymap):
@@ -75,7 +76,8 @@ class Keymapviz():
 
     def ascii_art(self):
         aa = self.__parse_ascii_art(self.keyboard.ascii_art)
-        return [aa.format(*self.__legends(_)) for _ in self.keymaps]
+        self.__ascii_art = [aa.format(*self.__legends(_)) for _ in self.keymaps]
+        return self.__ascii_art
 
 
     def layout_editor_json(self):
@@ -83,4 +85,27 @@ class Keymapviz():
         with open(os.path.join(path_, self.keyboard.layout_editor_json)) as f:
             json_ = json.load(f)
         return [self.__json_format(json_, _) for _ in self.keymaps]
+
+
+    def keymap_c(self):
+        class Repl():
+            def __init__(self, list_):
+                self.__list = list_
+                self.__gen  = self.__generator()
+
+            def __generator(self):
+                for _ in self.__list:
+                    yield _
+
+            def next(self, matchobj):
+                try:
+                    ret = next(self.__gen)
+                except StopIteration:
+                    ret = matchobj[0]
+                return ret
+
+        pattern = r'^[ \t\r\f\v]*?/\*.*?\[keymapviz\].*?\*/\s*?$'
+        repl = Repl(self.__ascii_art)
+        kc = re.sub(pattern, repl.next, self.__keymap_c, flags=re.MULTILINE|re.DOTALL)
+        return kc
 

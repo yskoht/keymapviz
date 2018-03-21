@@ -35,6 +35,7 @@ def parse_arg():
 
     parser.add_argument('-k', '--keyboard', type=str, choices=keyboards, help='keyboard of keymap.c', metavar='keyboards')
     parser.add_argument('-o', '--output',   type=str, help='output file name("{}" is replaced index)')
+    parser.add_argument('-r', '--replace',   action='store_true', help='replace comment block including "[keymapviz]" with ascii art. (make *.bac)')
     parser.add_argument('-t', '--type',     dest='type_', type=str, choices=types, default=types[0], help='type of output(default:ascii)')
     parser.add_argument('-v', '--version',  action='version', version='%(prog)s {}'.format(VERSION))
     parser.add_argument('keymap_c',         type=argparse.FileType('r'), help='keymap.c file name')
@@ -57,7 +58,7 @@ def parse_arg():
 def output_keymaps(output_filename, keymaps):
     if output_filename is None:
         # Output for stdout
-        [print(_) for _ in keymaps]
+        [print(_ + '\n') for _ in keymaps]
     else:
         # Output for file
         for i in range(len(keymaps)):
@@ -71,10 +72,19 @@ def output_keymaps(output_filename, keymaps):
                 print(k, file=file_)
 
 
+def output_keymap_c(output_filename, keymap_c):
+    if os.path.exists(output_filename):
+        os.rename(output_filename, output_filename + ".bac")
+    with open(output_filename, 'w') as f:
+        print(keymap_c, file=f)
+
+
 if __name__ == '__main__':
     arg = parse_arg()
     kmvz = keymapviz.Keymapviz(arg.keyboard, arg.keymap_c, legends)
 
     keymaps = getattr(kmvz, TYPES[arg.type_])()
     output_keymaps(arg.output, keymaps)
+    if arg.replace:
+        output_keymap_c(arg.keymap_c.name, kmvz.keymap_c())
 
