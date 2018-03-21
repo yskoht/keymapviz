@@ -76,7 +76,7 @@ def output_keymap_c(output_filename, keymap_c):
     if os.path.exists(output_filename):
         os.rename(output_filename, output_filename + ".bac")
     with open(output_filename, 'w') as f:
-        print(keymap_c, file=f)
+        print(keymap_c, file=f, end='')
 
 
 if __name__ == '__main__':
