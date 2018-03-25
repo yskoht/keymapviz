@@ -19,7 +19,7 @@ TYPES = {
 
 def split_path(path):
     head, tail = os.path.split(path)
-    if not head:
+    if (not head) or (head == '/'):
         return [tail]
     return split_path(head) + [tail]
 
@@ -44,7 +44,7 @@ def parse_arg():
 
     # Search keyboard name in 'keymap_c' path, if '-k' option is empty.
     if arg.keyboard is None:
-        path = split_path(arg.keymap_c.name)
+        path = split_path(os.path.abspath(arg.keymap_c.name))
         pset = list(set(path) & set(keyboards))  # product set
         if not pset:
             print('Sorry. Please choise your keyboard(-k/--keyboard).', file=sys.stderr)
