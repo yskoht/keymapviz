@@ -8,6 +8,7 @@ Following keyboards are supported.
 - ergodox
 - ergodox_ez
 - lets_split
+- helix
 
 ## Install
 
@@ -22,7 +23,7 @@ $ pip install -r requirements.txt
 Output ascii art.
 
 ```sh
-$ keymapviz.py qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
+$ python keymapviz.py qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
 
 /*
  *
@@ -98,9 +99,15 @@ This json file can be used in [http://www.keyboard-layout-editor.com/](http://ww
 
 
 ```sh
-$ keymapviz.py qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
+$ python keymapviz.py qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
 $ ls lets_split*.json
 lets_split0.json  lets_split1.json  lets_split2.json  lets_split3.json  lets_split4.json  lets_split5.json
+```
+
+Replace ascii-art in keymap.c. (Generate backup as keymap.c.bac)
+
+```sh
+$ python keymapviz.py -r keymap.c
 ```
 
 ## License
