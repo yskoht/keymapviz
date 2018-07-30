@@ -7,12 +7,14 @@ import json
 
 import regex as re
 
+import keymapviz.ergo42
 import keymapviz.ergodox
 import keymapviz.lets_split
 import keymapviz.helix
 
 
 KEYBOARDS = {
+    'ergo42': keymapviz.ergo42,
     'ergodox': keymapviz.ergodox,
     'ergodox_ez': keymapviz.ergodox,
     'helix': keymapviz.helix,
