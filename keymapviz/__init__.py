@@ -7,6 +7,7 @@ import json
 
 import regex as re
 
+import keymapviz.crkbd
 import keymapviz.ergo42
 import keymapviz.ergodash
 import keymapviz.ergodox
@@ -15,6 +16,7 @@ import keymapviz.helix
 
 
 KEYBOARDS = {
+    'crkbd': keymapviz.crkbd,
     'ergo42': keymapviz.ergo42,
     'ergodash': keymapviz.ergodash,
     'ergodox': keymapviz.ergodox,
