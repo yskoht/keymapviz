@@ -11,6 +11,7 @@ import keymapviz.crkbd
 import keymapviz.ergo42
 import keymapviz.ergodash
 import keymapviz.ergodox
+import keymapviz.fortitude60
 import keymapviz.lets_split
 import keymapviz.helix
 
@@ -21,6 +22,7 @@ KEYBOARDS = {
     'ergodash': keymapviz.ergodash,
     'ergodox': keymapviz.ergodox,
     'ergodox_ez': keymapviz.ergodox,
+    'fortitude60': keymapviz.fortitude60,
     'helix': keymapviz.helix,
     'lets_split': keymapviz.lets_split
 }
