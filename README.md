@@ -5,10 +5,13 @@ Keymapviz can convert keymap.c in [qmk_firmware](https://github.com/qmk/qmk_firm
 
 Following keyboards are supported.
 
-- ergodox
-- ergodox_ez
-- lets_split
-- helix
+- [crkbd](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd)
+- [ergo42](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergo42)
+- [ergodash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash)
+- [ergodox_ez](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox_ez)(ergodox)
+- [fortitude60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/fortitude60)
+- [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
+- [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
 
 ## Install
 
