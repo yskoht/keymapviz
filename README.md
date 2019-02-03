@@ -16,7 +16,7 @@ Following keyboards are supported.
 
 ## Install
 
-Keymapviz works with Python3.
+Keymapviz works with ***Python3***.
 
 ```sh
 $ pip install -r requirements.txt
@@ -113,6 +113,22 @@ Replace ascii-art in keymap.c. (Generate backup as keymap.c.bac)
 ```sh
 $ python keymapviz.py -r keymap.c
 ```
+
+## Troubleshooting
+
+### Keymapviz works with only ***Python3***.
+
+If you use Python2.x, you probably see following messages.
+
+```
+$ python keymapviz.py  qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
+  File "keymapviz.py", line 50
+    print('Sorry. Please choise your keyboard(-k/--keyboard).', file=sys.stderr)
+                                                                    ^
+SyntaxError: invalid syntax
+```
+
+Please updete your Python version to 3.x.
 
 ## License
 
