@@ -1,6 +1,9 @@
 
 # Keymapviz
 
+[![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](PythonVersion)
+[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+
 Keymapviz can convert keymap.c in [qmk_firmware](https://github.com/qmk/qmk_firmware) to ascii art or json file.
 
 Following keyboards are supported.
