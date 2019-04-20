@@ -16,6 +16,7 @@ Following keyboards are supported.
 - [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
+- [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 
 ## Install
 
