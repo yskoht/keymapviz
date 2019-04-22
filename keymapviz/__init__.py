@@ -15,6 +15,7 @@ import keymapviz.fortitude60
 import keymapviz.lets_split
 import keymapviz.kinesis
 import keymapviz.helix
+import keymapviz.mint60
 
 
 KEYBOARDS = {
@@ -26,7 +27,8 @@ KEYBOARDS = {
     'fortitude60': keymapviz.fortitude60,
     'helix': keymapviz.helix,
     'kinesis': keymapviz.kinesis,
-    'lets_split': keymapviz.lets_split
+    'lets_split': keymapviz.lets_split,
+    'mint60': keymapviz.mint60
 }
 
 
