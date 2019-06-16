@@ -6,7 +6,7 @@ import os
 import argparse
 
 import keymapviz
-from legends import *
+from keymapviz.legends import *
 
 
 VERSION = 'v1.1.0'
@@ -79,7 +79,7 @@ def output_keymap_c(output_filename, keymap_c):
         print(keymap_c, file=f, end='')
 
 
-if __name__ == '__main__':
+def main():
     arg = parse_arg()
     kmvz = keymapviz.Keymapviz(arg.keyboard, arg.keymap_c, legends)
 

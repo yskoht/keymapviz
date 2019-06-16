@@ -7,28 +7,28 @@ import json
 
 import regex as re
 
-import keymapviz.crkbd
-import keymapviz.ergo42
-import keymapviz.ergodash
-import keymapviz.ergodox
-import keymapviz.fortitude60
-import keymapviz.lets_split
-import keymapviz.kinesis
-import keymapviz.helix
-import keymapviz.mint60
+import keymapviz.keyboards.crkbd
+import keymapviz.keyboards.ergo42
+import keymapviz.keyboards.ergodash
+import keymapviz.keyboards.ergodox
+import keymapviz.keyboards.fortitude60
+import keymapviz.keyboards.lets_split
+import keymapviz.keyboards.kinesis
+import keymapviz.keyboards.helix
+import keymapviz.keyboards.mint60
 
 
 KEYBOARDS = {
-    'crkbd': keymapviz.crkbd,
-    'ergo42': keymapviz.ergo42,
-    'ergodash': keymapviz.ergodash,
-    'ergodox': keymapviz.ergodox,
-    'ergodox_ez': keymapviz.ergodox,
-    'fortitude60': keymapviz.fortitude60,
-    'helix': keymapviz.helix,
-    'kinesis': keymapviz.kinesis,
-    'lets_split': keymapviz.lets_split,
-    'mint60': keymapviz.mint60
+    'crkbd': keymapviz.keyboards.crkbd,
+    'ergo42': keymapviz.keyboards.ergo42,
+    'ergodash': keymapviz.keyboards.ergodash,
+    'ergodox': keymapviz.keyboards.ergodox,
+    'ergodox_ez': keymapviz.keyboards.ergodox,
+    'fortitude60': keymapviz.keyboards.fortitude60,
+    'helix': keymapviz.keyboards.helix,
+    'kinesis': keymapviz.keyboards.kinesis,
+    'lets_split': keymapviz.keyboards.lets_split,
+    'mint60': keymapviz.keyboards.mint60
 }
 
 
