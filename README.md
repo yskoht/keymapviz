@@ -23,7 +23,7 @@ Following keyboards are supported.
 Keymapviz works with ***Python3***.
 
 ```sh
-$ pip install -r requirements.txt
+$ pip3 install keymapviz
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ $ pip install -r requirements.txt
 Output ascii art.
 
 ```sh
-$ python keymapviz.py qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
+$ keymapviz qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
 
 /*
  *
@@ -107,7 +107,7 @@ This json file can be used in [http://www.keyboard-layout-editor.com/](http://ww
 
 
 ```sh
-$ python keymapviz.py qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
+$ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
 $ ls lets_split*.json
 lets_split0.json  lets_split1.json  lets_split2.json  lets_split3.json  lets_split4.json  lets_split5.json
 ```
@@ -115,24 +115,8 @@ lets_split0.json  lets_split1.json  lets_split2.json  lets_split3.json  lets_spl
 Replace ascii-art in keymap.c. (Generate backup as keymap.c.bac)
 
 ```sh
-$ python keymapviz.py -r keymap.c
+$ keymapviz -r keymap.c
 ```
-
-## Troubleshooting
-
-### Keymapviz works with only ***Python3***.
-
-If you use Python2.x, you probably see following messages.
-
-```
-$ python keymapviz.py  qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
-  File "keymapviz.py", line 50
-    print('Sorry. Please choise your keyboard(-k/--keyboard).', file=sys.stderr)
-                                                                    ^
-SyntaxError: invalid syntax
-```
-
-Please updete your Python version to 3.x.
 
 ## License
 
