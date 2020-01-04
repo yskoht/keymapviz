@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 keymap_keyword = '(?:KEYMAP|LAYOUT)'
-layout_editor_json = 'lets_split/layout_editor.json'
+layout_editor_json = 'keyboards/lets_split/layout_editor.json'
 
 ascii_art = '''
 /* ,-----------------------------------------.  ,-----------------------------------------.

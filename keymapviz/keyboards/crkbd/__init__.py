@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 keymap_keyword = '(?:LAYOUT_kc)'
-layout_editor_json = 'crkbd/layout_editor.json'
+layout_editor_json = 'keyboards/crkbd/layout_editor.json'
 
 ascii_art = '''
 /* ,-----------------------------------------.                ,-----------------------------------------.

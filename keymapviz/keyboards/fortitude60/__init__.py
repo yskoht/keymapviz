@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 keymap_keyword = '(?:LAYOUT)'
-layout_editor_json = 'fortitude60/layout_editor.json'
+layout_editor_json = 'keyboards/fortitude60/layout_editor.json'
 
 ascii_art = '''
 /* ,-----------------------------------------.                ,-----------------------------------------.
