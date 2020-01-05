@@ -1,4 +1,7 @@
 __pycache__
 *.pyc
 .DS_Store
+test/qmk_firmware
+test/*.json
+test/*.c
 
