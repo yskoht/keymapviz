@@ -1,0 +1,81 @@
+[
+    [
+        {
+            "a": 7
+        },
+        "ESC",
+        "TAB",
+        "Q",
+        "W",
+        "E",
+        "R",
+        "T",
+        {
+            "x": 1
+        },
+        "Y",
+        "U",
+        "I",
+        "O",
+        "P",
+        "LBRC",
+        "BSPC"
+    ],
+    [
+        "DEL",
+        "RCTL",
+        "A",
+        "S",
+        "D",
+        "F",
+        "G",
+        {
+            "x": 1
+        },
+        "H",
+        "J",
+        "K",
+        "L",
+        "SCLN",
+        "RBRC",
+        "ENT"
+    ],
+    [
+        "MO(SYMB)",
+        "LSFT",
+        "Z",
+        "X",
+        "C",
+        "V",
+        "B",
+        {
+            "x": 1
+        },
+        "N",
+        "M",
+        "COMM",
+        "DOT",
+        "SLSH",
+        "UP",
+        "RSFT"
+    ],
+    [
+        "LGUI",
+        "LCTL",
+        "GRV",
+        "BSLS",
+        "LALT",
+        "MO(META)",
+        "SPC",
+        {
+            "x": 1
+        },
+        "SPC",
+        "QUOT",
+        "MINS",
+        "EQL",
+        "LEFT",
+        "DOWN",
+        "RGHT"
+    ]
+]
