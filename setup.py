@@ -19,7 +19,7 @@ json_files = search_json_files()
 
 setup(
     name='keymapviz',
-    version='1.1.0',
+    version='1.1.1',
     description='keymap.c visualizer',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -32,7 +32,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    keywords='keymapviz keymap.c',
+    keywords='keymapviz keymap.c qmk_firmware',
     packages=find_packages(exclude=['tests']),
     python_requires='>=3.5',
     install_requires=['regex'],
