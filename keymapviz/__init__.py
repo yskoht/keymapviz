@@ -73,7 +73,7 @@ class Keymapviz():
 
 
     def __legends(self, keymap):
-        return [self.legends.get(_, re.sub(r'^KC_', '', _)) for _ in keymap]
+        return [self.legends.get(_, re.sub(r'^KC_', '', _)) for _ in keymap] + [''] * 100  # FIXME :_(
 
 
     def __json_format(self, json_, keymap):
