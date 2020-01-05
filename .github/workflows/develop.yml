@@ -24,6 +24,9 @@ jobs:
       run: |
         python setup.py sdist
         pip install dist/*.tar.gz
+    - name: Print keymapviz version
+      run: |
+        keymapviz -v
     - name: Clone QMK
       run: |
         (cd test && git clone --depth 1 https://github.com/qmk/qmk_firmware.git)
