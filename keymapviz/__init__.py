@@ -29,7 +29,7 @@ KEYBOARDS = {
     'helix': keymapviz.keyboards.helix,
     'kinesis': keymapviz.keyboards.kinesis,
     'lets_split': keymapviz.keyboards.lets_split,
-    'mint60': keymapviz.keyboards.mint60
+    'mint60': keymapviz.keyboards.mint60,
     'kaishi65': keymapviz.keyboards.kaishi65
 }
 
@@ -122,4 +122,3 @@ class Keymapviz():
         repl = Repl(self.__ascii_art)
         kc = re.sub(pattern, repl.next, self.__keymap_c, flags=re.MULTILINE|re.DOTALL)
         return kc
-
