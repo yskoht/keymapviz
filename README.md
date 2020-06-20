@@ -17,7 +17,7 @@ Following keyboards are supported.
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
-- [kaihi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
+- [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
 
 ## Install
 
