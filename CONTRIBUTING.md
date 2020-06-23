@@ -3,6 +3,19 @@
 
 Your any contributions are welcome! Adding keyboard, fixing bug, updating document, adding test and creating new feature, etc.
 
+- Getting code
+- Creating feature branch from develop
+- If you want to add a new keyboard
+    - Adding keymapviz/keyboards/*keyboard_name*/\_\_init__.py
+    - Adding keymapviz/keyboards/*keyboard_name*/layout_editor.json
+    - Fixing keymapviz/\_\_init__.py
+    - Fixing keymapviz/README.md
+- Run
+- Committing & push your code and
+- Create pull request
+
+---
+
 ## Getting code
 
 ```sh
@@ -60,6 +73,13 @@ Add keyboard.
  import keymapviz.keyboards.helix
  import keymapviz.keyboards.mint60
 +import keymapviz.keyboards.keyboard_name # Here
+
+ ...
+ KEYBOARDS = {
+    ...
++   'mint60': keymapviz.keyboards.mint60, # Add comma
++   'keyboard_name': keymapviz.keyboards.keyboard_name # Here
+}
 ```
 
 ### Fixing keymapviz/README.md
@@ -72,6 +92,17 @@ Add keyboard.
  - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
  - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 +- [keyboard_name](https://github.com/qmk/qmk_firmware/tree/master/keyboards/keyboard_name) # Here
+```
+
+## Run
+
+Install `keymapviz` on your PC and make sure it works properly.
+
+```sh
+$ pip install setuptools
+$ python setup.py sdist # build
+$ pip install dist/*.tar.gz # install
+$ keymapviz -v # You can use your own keymapviz.
 ```
 
 ## Committing & push your code and
