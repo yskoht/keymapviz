@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-keymap_keyword = '(?:LAYOUT_ergodox|KEYMAP|KEYMAP_80|LAYOUT_ergodox_pretty)'
+keymap_keyword = '(?:LAYOUT_ergodox|KEYMAP|KEYMAP_80|LAYOUT_ergodox_pretty|KEYMAP_TKG)'
 layout_editor_json = 'keyboards/ergodox/layout_editor.json'
 
 ascii_art = '''
