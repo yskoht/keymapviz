@@ -23,6 +23,7 @@ KEYBOARDS = {
     'crkbd': keymapviz.keyboards.crkbd,
     'ergo42': keymapviz.keyboards.ergo42,
     'ergodash': keymapviz.keyboards.ergodash,
+    'ergodone': keymapviz.keyboards.ergodox,
     'ergodox': keymapviz.keyboards.ergodox,
     'ergodox_ez': keymapviz.keyboards.ergodox,
     'fortitude60': keymapviz.keyboards.fortitude60,
