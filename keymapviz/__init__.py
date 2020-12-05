@@ -119,7 +119,7 @@ class Keymapviz():
                     ret = matchobj[0]
                 return ret
 
-        pattern = r'^[ \t\r\f\v]*?/\*.*?\[keymapviz\].*?\*/\s*?$'
+        pattern = r'^[ \t\r\f\v]*?/\*((?!\*/).)*?\[keymapviz\].*?\*/\s*?$'
         repl = Repl(self.__ascii_art)
         kc = re.sub(pattern, repl.next, self.__keymap_c, flags=re.MULTILINE|re.DOTALL)
         return kc
