@@ -30,6 +30,8 @@ exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o l
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60.c')
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60_{}.json -t json')
 
+exe('keymapviz -r -k lets_split ./input/replace_lets_split_keymap.c >/dev/null 2>&1')
+
 exe('diff -u expect/crkbd.c      crkbd.c')
 exe('diff -u expect/crkbd_0.json crkbd_0.json')
 exe('diff -u expect/crkbd_1.json crkbd_1.json')
@@ -88,5 +90,7 @@ exe('diff -u expect/lets_split_5.json lets_split_5.json')
 exe('diff -u expect/mint60.c      mint60.c')
 exe('diff -u expect/mint60_0.json mint60_0.json')
 exe('diff -u expect/mint60_1.json mint60_1.json')
+
+exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.c')
 
 sys.exit(0 if status else 1)
