@@ -19,6 +19,7 @@ Following keyboards are supported.
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 - [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
+- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kyria)
 
 ## Install
 

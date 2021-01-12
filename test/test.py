@@ -29,6 +29,8 @@ exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o l
 exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o lets_split_{}.json -t json')
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60.c')
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60_{}.json -t json')
+exe('keymapviz ./qmk_firmware/keyboards/kyria/keymaps/default/keymap.c -o kyria.c')
+exe('keymapviz ./qmk_firmware/keyboards/kyria/keymaps/default/keymap.c -o kyria_{}.json -t json')
 
 exe('keymapviz -r -k lets_split ./input/replace_lets_split_keymap.c >/dev/null 2>&1')
 
@@ -90,6 +92,12 @@ exe('diff -u expect/lets_split_5.json lets_split_5.json')
 exe('diff -u expect/mint60.c      mint60.c')
 exe('diff -u expect/mint60_0.json mint60_0.json')
 exe('diff -u expect/mint60_1.json mint60_1.json')
+
+exe('diff -u expect/kyria.c      kyria.c')
+exe('diff -u expect/kyria_0.json kyria_0.json')
+exe('diff -u expect/kyria_1.json kyria_1.json')
+exe('diff -u expect/kyria_2.json kyria_2.json')
+exe('diff -u expect/kyria_3.json kyria_3.json')
 
 exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.c')
 

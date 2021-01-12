@@ -17,6 +17,7 @@ import keymapviz.keyboards.kinesis
 import keymapviz.keyboards.helix
 import keymapviz.keyboards.mint60
 import keymapviz.keyboards.kaishi65
+import keymapviz.keyboards.kyria
 
 
 KEYBOARDS = {
@@ -31,7 +32,8 @@ KEYBOARDS = {
     'kinesis': keymapviz.keyboards.kinesis,
     'lets_split': keymapviz.keyboards.lets_split,
     'mint60': keymapviz.keyboards.mint60,
-    'kaishi65': keymapviz.keyboards.kaishi65
+    'kaishi65': keymapviz.keyboards.kaishi65,
+    'kyria': keymapviz.keyboards.kyria
 }
 
 
