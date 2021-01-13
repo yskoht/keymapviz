@@ -21,16 +21,12 @@ legends = {
     'LSFT(KC_SPACE)': 'Sft-SPC',
 }
 
-config = configparser.ConfigParser()
-props = config.read('/home/daan/legends.properties')
-propsLegends = config['legends']
-
-print("legends: ")
-print(legends.values())
-print("props: ")
-print(propsLegends)
-
-for key in propsLegends:
-    legends.update()
-#legend = {'ESC': 'bla'}
-#legends.update(legend)
+def read_config(config_file_path):
+    if config_file_path:
+        config = configparser.ConfigParser()
+        config.optionxform = str
+        config.read_file(config_file_path)
+        if 'legends' in config._sections:
+            config_legends = config._sections.get("legends")
+            legends.update(config_legends)
+    return legends
