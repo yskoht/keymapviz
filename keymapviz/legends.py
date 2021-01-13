@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import configparser
 
 legends = {
     'XXXXXXX': '',
@@ -19,3 +20,17 @@ legends = {
     'LCTL(KC_G)': 'Ctrl-G',
     'LSFT(KC_SPACE)': 'Sft-SPC',
 }
+
+config = configparser.ConfigParser()
+props = config.read('/home/daan/legends.properties')
+propsLegends = config['legends']
+
+print("legends: ")
+print(legends.values())
+print("props: ")
+print(propsLegends)
+
+for key in propsLegends:
+    legends.update()
+#legend = {'ESC': 'bla'}
+#legends.update(legend)
