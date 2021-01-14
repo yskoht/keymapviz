@@ -105,6 +105,19 @@ $ keymapviz qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
  */
 ```
 
+Legend replacements.
+A config file containing legend repacements can be provided to change the legends to your liking. It should have a section named 'legends' and e.g. look like:
+```
+[legends]
+KC_BLSLS=\
+KC_QUOT='
+```
+It than can be provided on the commandline like:
+```
+$ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -c /path/to/config.properties
+```
+An example file is provided in the root of this project, named `config.properties`.
+
 Output json file.
 This json file can be used in [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/).
 

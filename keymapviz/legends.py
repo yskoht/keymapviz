@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import configparser
 
 legends = {
     'XXXXXXX': '',
@@ -19,3 +20,13 @@ legends = {
     'LCTL(KC_G)': 'Ctrl-G',
     'LSFT(KC_SPACE)': 'Sft-SPC',
 }
+
+def read_config(config_file_path):
+    if config_file_path:
+        config = configparser.ConfigParser()
+        config.optionxform = str
+        config.read_file(config_file_path)
+        if 'legends' in config._sections:
+            config_legends = config._sections.get("legends")
+            legends.update(config_legends)
+    return legends
