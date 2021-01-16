@@ -25,7 +25,7 @@ def split_path(path):
 
 
 def parse_arg():
-    keyboards = keymapviz.KEYBOARDS.keys()
+    keyboards = sorted(keymapviz.KEYBOARDS.keys())
     types = list(TYPES.keys())
 
     desc = 'keymap.c visualizer'

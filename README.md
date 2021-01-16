@@ -15,12 +15,12 @@ Following keyboards are supported.
 - [ergodox_ez](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox_ez)(ergodox)
 - [fortitude60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/fortitude60)
 - [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
+- [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)  
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
-- [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
-- [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
-- [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
 - [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kyria)
-- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58)
+- [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
+- [lily58](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58)
+- [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 
 ## Install
 
