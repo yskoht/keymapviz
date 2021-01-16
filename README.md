@@ -20,6 +20,7 @@ Following keyboards are supported.
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 - [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
 - [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kyria)
+- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58)
 
 ## Install
 
