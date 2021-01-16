@@ -9,7 +9,7 @@ import keymapviz
 from keymapviz.legends import *
 
 
-VERSION = 'v1.3.0'
+VERSION = 'v1.4.0'
 
 TYPES = {
     'ascii': 'ascii_art',
@@ -25,7 +25,7 @@ def split_path(path):
 
 
 def parse_arg():
-    keyboards = keymapviz.KEYBOARDS.keys()
+    keyboards = sorted(keymapviz.KEYBOARDS.keys())
     types = list(TYPES.keys())
 
     desc = 'keymap.c visualizer'
@@ -33,6 +33,7 @@ def parse_arg():
                                      epilog='Following keyboards are supported.\n * '+'\n * '.join(keyboards),
                                      formatter_class=argparse.RawTextHelpFormatter)
 
+    parser.add_argument('-c', '--config', type=argparse.FileType('r'), help='configuration file')
     parser.add_argument('-k', '--keyboard', type=str, choices=keyboards, help='keyboard of keymap.c', metavar='keyboards')
     parser.add_argument('-o', '--output',   type=str, help='output file name("{}" is replaced index)')
     parser.add_argument('-r', '--replace',   action='store_true', help='replace comment block including "[keymapviz]" with ascii art. (make *.bac)')
@@ -47,7 +48,7 @@ def parse_arg():
         path = split_path(os.path.abspath(arg.keymap_c.name))
         pset = list(set(path) & set(keyboards))  # product set
         if not pset:
-            print('Sorry. Please choise your keyboard(-k/--keyboard).', file=sys.stderr)
+            print('Sorry. Please choose your keyboard(-k/--keyboard).', file=sys.stderr)
             sys.exit(1)
         else:
             arg.keyboard = pset[0]
@@ -81,7 +82,7 @@ def output_keymap_c(output_filename, keymap_c):
 
 def main():
     arg = parse_arg()
-    kmvz = keymapviz.Keymapviz(arg.keyboard, arg.keymap_c, legends)
+    kmvz = keymapviz.Keymapviz(arg.keyboard, arg.keymap_c, read_config(arg.config))
 
     keymaps = getattr(kmvz, TYPES[arg.type_])()
     output_keymaps(arg.output, keymaps)
