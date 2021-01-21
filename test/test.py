@@ -35,6 +35,7 @@ exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily5
 exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily58_{}.json -t json')
 
 exe('keymapviz -r -k lets_split ./input/replace_lets_split_keymap.c >/dev/null 2>&1')
+exe('keymapviz -k lets_split ./input/custom_legends_lets_split_keymap.c -c ./input/custom_legends_config.properties -o custom_legends_lets_split.c')
 
 exe('diff -u expect/crkbd.c      crkbd.c')
 exe('diff -u expect/crkbd_0.json crkbd_0.json')
@@ -108,5 +109,6 @@ exe('diff -u expect/lily58_2.json lily58_2.json')
 exe('diff -u expect/lily58_3.json lily58_3.json')
 
 exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.c')
+exe('diff -u expect/custom_legends_lets_split.c custom_legends_lets_split.c')
 
 sys.exit(0 if status else 1)
