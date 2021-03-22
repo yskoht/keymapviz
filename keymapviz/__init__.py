@@ -19,6 +19,7 @@ import keymapviz.keyboards.mint60
 import keymapviz.keyboards.kaishi65
 import keymapviz.keyboards.kyria
 import keymapviz.keyboards.lily58
+import keymapviz.keyboards.sweet16
 
 
 KEYBOARDS = {
@@ -36,6 +37,7 @@ KEYBOARDS = {
     'mint60': keymapviz.keyboards.mint60,
     'kaishi65': keymapviz.keyboards.kaishi65,
     'kyria': keymapviz.keyboards.kyria,
+    'sweet16': keymapviz.keyboards.sweet16,
 }
 
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-keymap_keyword = '(?:LAYOUT|LAYOUT_kc|LAYOUT_split_3x6_7_4)'
+keymap_keyword = '(?:LAYOUT)'
 layout_editor_json = 'keyboards/lily58/layout_editor.json'
 
 ascii_art = '''
