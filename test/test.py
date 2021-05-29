@@ -35,6 +35,8 @@ exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily5
 exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily58_{}.json -t json')
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16.c')
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16_{}.json -t json')
+exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6.c')
+exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6_{}.json -t json')
 
 exe('keymapviz -r -k lets_split ./input/replace_lets_split_keymap.c >/dev/null 2>&1')
 exe('keymapviz -k lets_split ./input/custom_legends_lets_split_keymap.c -c ./input/custom_legends_config.properties -o custom_legends_lets_split.c')
@@ -112,6 +114,9 @@ exe('diff -u expect/lily58_3.json lily58_3.json')
 
 exe('diff -u expect/sweet16.c      sweet16.c')
 exe('diff -u expect/sweet16_0.json sweet16_0.json')
+
+exe('diff -u expect/dactyl_manuform5x6.c      dactyl_manuform5x6.c')
+exe('diff -u expect/dactyl_manuform5x6_0.json dactyl_manuform5x6_0.json')
 
 exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.c')
 exe('diff -u expect/custom_legends_lets_split.c custom_legends_lets_split.c')
