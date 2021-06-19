@@ -14,6 +14,7 @@ VERSION = 'v1.6.1'
 TYPES = {
     'ascii': 'ascii_art',
     'json': 'layout_editor_json',
+    'fancy': 'fancy_art',
 }
 
 
