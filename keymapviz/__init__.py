@@ -142,12 +142,12 @@ class Keymapviz():
         return box_drawing_table[ldur]
 
     def fancy_art(self):
+        if hasattr(self.keyboard, 'fancy_ascii_art'):
+            # There already exists a man-made fancy ascii art for this keyboard.
+            fa = self.__parse_ascii_art(self.keyboard.fancy_ascii_art)
+            self.__ascii_art = [fa.format(*self.__legends(_)) for _ in self.keymaps]
+            return self.__ascii_art
         aa = self.keyboard.ascii_art
-        # Looking for the presence of box drawing characters in general,
-        # '┌' is simply a good, arbitrary proxy.
-        if '┌' in aa:
-            # self.ascii_art() is a man-made keymap visualization with box drawings
-           return self.ascii_art()
         keymapviz_signature_pattern = r'[A-Za-z ]*\[keymapviz\].*\*/\s*$'
         # If the keymapviz signature is adjacent to certain outline characters,
         # self.__get_box_drawing will incorrectly interpret the characters composing the signature
@@ -166,7 +166,7 @@ class Keymapviz():
         # correctly handling IndexErrors when assigning down and up in the loop.
         fa_matrix = [[' '] * max_line_len] + fa_matrix + [[' '] * max_line_len]
         aa_matrix = [[' '] * max_line_len] + aa_matrix + [[' '] * max_line_len]
-        # Starting on row 1 because row 0 is just empty chars
+        # Starting on row 1 because row 0 is filled with empty space chars.
         for i in range(1, line_count):
             # The first two chars of each line are ' *' (C block comment)
             # so we can ignore them.
