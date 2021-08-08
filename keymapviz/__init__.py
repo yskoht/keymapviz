@@ -97,10 +97,13 @@ class Keymapviz():
         return ret_str
 
 
-    def ascii_art(self):
-        aa = self.__parse_ascii_art(self.keyboard.ascii_art)
+    def __get_final_ascii_art(self, ascii_art):
+        aa = self.__parse_ascii_art(ascii_art)
         self.__ascii_art = [aa.format(*self.__legends(_)) for _ in self.keymaps]
         return self.__ascii_art
+
+    def ascii_art(self):
+        return self.__get_final_ascii_art(self.keyboard.ascii_art)
 
 
     def layout_editor_json(self):
@@ -144,9 +147,7 @@ class Keymapviz():
     def fancy_art(self):
         if hasattr(self.keyboard, 'fancy_ascii_art'):
             # There already exists a man-made fancy ascii art for this keyboard.
-            fa = self.__parse_ascii_art(self.keyboard.fancy_ascii_art)
-            self.__ascii_art = [fa.format(*self.__legends(_)) for _ in self.keymaps]
-            return self.__ascii_art
+            return self.__get_final_ascii_art(self.keyboard.fancy_ascii_art)
         aa = self.keyboard.ascii_art
         keymapviz_signature_pattern = r'[A-Za-z ]*\[keymapviz\].*\*/\s*$'
         # If the keymapviz signature is adjacent to certain outline characters,
@@ -187,9 +188,7 @@ class Keymapviz():
 
         fa = '\n'.join(map(lambda line: ''.join(line).rstrip(), fa_matrix))
         fa = fa.replace(kmvz_signature_placeholder, kmvz_signature)
-        fa = self.__parse_ascii_art(fa)
-        self.__ascii_art = [fa.format(*self.__legends(_)) for _ in self.keymaps]
-        return self.__ascii_art
+        return self.__get_final_ascii_art(fa)
 
 
     def keymap_c(self):
