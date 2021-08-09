@@ -9,11 +9,12 @@ import keymapviz
 from keymapviz.legends import *
 
 
-VERSION = 'v1.6.1'
+VERSION = 'v1.7.0'
 
 TYPES = {
     'ascii': 'ascii_art',
     'json': 'layout_editor_json',
+    'fancy': 'fancy_art',
 }
 
 

@@ -46,7 +46,6 @@ jobs:
         python -m pip install --upgrade pip
     - name: Install keymapviz
       run: |
-        pip search keymapviz
         pip install keymapviz
     - name: Print keymapviz version
       run: |
