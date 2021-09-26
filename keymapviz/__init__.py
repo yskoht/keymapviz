@@ -21,6 +21,7 @@ import keymapviz.keyboards.kyria
 import keymapviz.keyboards.lily58
 import keymapviz.keyboards.sweet16
 import keymapviz.keyboards.dactyl_manuform5x6
+import keymapviz.keyboards.sofle
 
 
 KEYBOARDS = {
@@ -40,6 +41,7 @@ KEYBOARDS = {
     'kyria': keymapviz.keyboards.kyria,
     'sweet16': keymapviz.keyboards.sweet16,
     'dactyl_manuform5x6': keymapviz.keyboards.dactyl_manuform5x6,
+    'sofle': keymapviz.keyboards.sofle,
 }
 
 
