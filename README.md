@@ -17,7 +17,7 @@ Following keyboards are supported.
 - [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
 - [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)  
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
-- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kyria)
+- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/splitkb/kyria)
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
 - [lily58](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58)
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
