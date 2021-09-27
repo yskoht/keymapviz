@@ -17,12 +17,13 @@ Following keyboards are supported.
 - [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
 - [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)  
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
-- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kyria)
+- [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/splitkb/kyria)
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
 - [lily58](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58)
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 - [sweet16](https://github.com/qmk/qmk_firmware/tree/master/keyboards/1upkeyboards/sweet16)
 - [dactyl_manuform5x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/5x6)
+- [sofle](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle)
 
 ## Install
 
