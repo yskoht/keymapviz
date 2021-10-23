@@ -23,6 +23,7 @@ Following keyboards are supported.
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
 - [sweet16](https://github.com/qmk/qmk_firmware/tree/master/keyboards/1upkeyboards/sweet16)
 - [dactyl_manuform5x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/5x6)
+- [dactyl_manuform5x7](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/5x7)
 - [sofle](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle)
 - [moonlander](https://github.com/qmk/qmk_firmware/tree/master/keyboards/moonlander)
 
