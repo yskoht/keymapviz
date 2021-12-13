@@ -11,6 +11,7 @@ Following keyboards are supported.
 - [crkbd](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd)
 - [ergo42](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergo42)
 - [ergodash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash)
+- [ergodash_2u_inner](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash)
 - [ergodone](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodone)(ergodox)
 - [ergodox_ez](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox_ez)(ergodox)
 - [fortitude60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/fortitude60)
