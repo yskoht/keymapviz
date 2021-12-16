@@ -40,7 +40,7 @@ def parse_arg():
     parser.add_argument('-r', '--replace',   action='store_true', help='replace comment block including "[keymapviz]" with ascii art. (make *.bac)')
     parser.add_argument('-t', '--type',     dest='type_', type=str, choices=types, default=types[0], help='type of output(default:ascii)')
     parser.add_argument('-v', '--version',  action='version', version='%(prog)s {}'.format(VERSION))
-    parser.add_argument('keymap_c',         type=argparse.FileType('r'), help='keymap.c file name')
+    parser.add_argument('keymap_c',         type=argparse.FileType('r', encoding='utf-8'), help='keymap.c file name')
 
     arg = parser.parse_args()
 
