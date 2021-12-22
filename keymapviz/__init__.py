@@ -10,6 +10,7 @@ import regex as re
 import keymapviz.keyboards.crkbd
 import keymapviz.keyboards.ergo42
 import keymapviz.keyboards.ergodash
+import keymapviz.keyboards.ergodash_2u_inner
 import keymapviz.keyboards.ergodox
 import keymapviz.keyboards.fortitude60
 import keymapviz.keyboards.lets_split
@@ -29,6 +30,7 @@ KEYBOARDS = {
     'crkbd': keymapviz.keyboards.crkbd,
     'ergo42': keymapviz.keyboards.ergo42,
     'ergodash': keymapviz.keyboards.ergodash,
+    'ergodash_2u_inner': keymapviz.keyboards.ergodash_2u_inner,
     'ergodone': keymapviz.keyboards.ergodox,
     'ergodox': keymapviz.keyboards.ergodox,
     'ergodox_ez': keymapviz.keyboards.ergodox,
