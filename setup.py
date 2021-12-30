@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 def search_json_files():
     chdir('keymapviz')
-    files = glob('keyboards/*/*.json')
+    files = glob('keyboards/*/layout_editor/*.json')
     chdir('..')
     return files
 

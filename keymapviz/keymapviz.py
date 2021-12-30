@@ -34,10 +34,11 @@ def parse_arg():
                                      epilog='Following keyboards are supported.\n * '+'\n * '.join(keyboards),
                                      formatter_class=argparse.RawTextHelpFormatter)
 
-    parser.add_argument('-c', '--config', type=argparse.FileType('r'), help='configuration file')
+    parser.add_argument('-c', '--config',   type=argparse.FileType('r'), help='configuration file')
     parser.add_argument('-k', '--keyboard', type=str, choices=keyboards, help='keyboard of keymap.c', metavar='keyboards')
+    parser.add_argument('-l', '--layout',   type=str, help='keyboard layout', metavar='layout')
     parser.add_argument('-o', '--output',   type=str, help='output file name("{}" is replaced index)')
-    parser.add_argument('-r', '--replace',   action='store_true', help='replace comment block including "[keymapviz]" with ascii art. (make *.bac)')
+    parser.add_argument('-r', '--replace',  action='store_true', help='replace comment block including "[keymapviz]" with ascii art. (make *.bac)')
     parser.add_argument('-t', '--type',     dest='type_', type=str, choices=types, default=types[0], help='type of output(default:ascii)')
     parser.add_argument('-v', '--version',  action='version', version='%(prog)s {}'.format(VERSION))
     parser.add_argument('keymap_c',         type=argparse.FileType('r', encoding='utf-8'), help='keymap.c file name')
@@ -83,7 +84,7 @@ def output_keymap_c(output_filename, keymap_c):
 
 def main():
     arg = parse_arg()
-    kmvz = keymapviz.Keymapviz(arg.keyboard, arg.keymap_c, read_config(arg.config))
+    kmvz = keymapviz.Keymapviz(arg.keyboard, arg.keymap_c, arg.layout, read_config(arg.config))
 
     keymaps = getattr(kmvz, TYPES[arg.type_])()
     output_keymaps(arg.output, keymaps)
