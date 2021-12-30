@@ -1,4 +1,3 @@
-
 # Keymapviz
 
 [![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](PythonVersion)
@@ -10,12 +9,12 @@ Following keyboards are supported.
 
 - [crkbd](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd)
 - [ergo42](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergo42)
-- [ergodash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash)
+- [ergodash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash) (layout: `default`, `2u_inner`)
 - [ergodone](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodone)(ergodox)
 - [ergodox_ez](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox_ez)(ergodox)
 - [fortitude60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/fortitude60)
 - [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
-- [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)  
+- [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
 - [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/splitkb/kyria)
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
@@ -28,7 +27,7 @@ Following keyboards are supported.
 
 ## Install
 
-Keymapviz works with ***Python3***.
+Keymapviz works with **_Python3_**.
 
 ```sh
 $ pip3 install keymapviz
@@ -112,20 +111,23 @@ $ keymapviz qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
 
 Legend replacements.
 A config file containing legend replacements can be provided to change the legends to your liking. It should have a section named 'legends' and e.g. look like:
+
 ```
 [legends]
 KC_BLSLS=\
 KC_QUOT='
 ```
+
 It can then be provided on the commandline like:
+
 ```
 $ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -c /path/to/config.properties
 ```
+
 An example file is provided in the root of this project, named `config.properties`.
 
 Output json file.
 This json file can be used in [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/).
-
 
 ```sh
 $ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
