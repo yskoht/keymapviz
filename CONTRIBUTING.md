@@ -1,4 +1,3 @@
-
 # Contributing
 
 Your any contributions are welcome! Adding keyboard, fixing bug, updating document, adding test and creating new feature, etc.
@@ -6,10 +5,10 @@ Your any contributions are welcome! Adding keyboard, fixing bug, updating docume
 - Getting code
 - Creating feature branch from develop
 - If you want to add a new keyboard
-    - Adding keymapviz/keyboards/*keyboard_name*/\_\_init__.py
-    - Adding keymapviz/keyboards/*keyboard_name*/layout_editor.json
-    - Fixing keymapviz/\_\_init__.py
-    - Fixing keymapviz/README.md
+  - Adding keymapviz/keyboards/_keyboard_name_/\_\_init\_\_.py
+  - Adding keymapviz/keyboards/_keyboard_name_/layout_editor/default.json
+  - Fixing keymapviz/\_\_init\_\_.py
+  - Fixing keymapviz/README.md
 - Run
 - Committing & push your code and
 - Create pull request
@@ -37,33 +36,34 @@ $ git branch
 
 ## If you want to add a new keyboard
 
-You need to add two new files. (Replace *keyboard_name* with the name of the keyboard you want to add.)
+You need to add two new files. (Replace _keyboard_name_ with the name of the keyboard you want to add.)
 
-- keymapviz/keyboards/*keyboard_name*/\_\_init__.py
-- keymapviz/keyboards/*keyboard_name*/layout_editor.json
+- keymapviz/keyboards/_keyboard_name_/\_\_init\_\_.py
+- keymapviz/keyboards/_keyboard_name_/layout_editor/default.json
 
 And fix two files.
 
-- keymapviz/\_\_init__.py
+- keymapviz/\_\_init\_\_.py
 - keymapviz/README.md
 
-### Adding keymapviz/keyboards/*keyboard_name*/\_\_init__.py
+### Adding keymapviz/keyboards/_keyboard_name_/\_\_init\_\_.py
 
 Define three variables in this file. `keymap_keyword`, `layout_editor_json` and `ascii_art`.
+(`fancy_ascii_art` is optional.)
 
 - `keymap_keyword`: The regular expression for the macro keywords used to define the keymap in `keymap.c` of qmk.
 - `layout_editor_json`: The path to `layout_editor.json` file.
 - `ascii_art`: ASCII art. `{}` is replaced by a key legend. If you want to place the key legend in a desired location, you need to write the key index in the bracket. Please refer to these files.
-    - [keymapviz/keyboards/lets_split/\_\_init__.py](#keymapviz/keyboards/lets_split/__init__.py)
-    - [keymapviz/keyboards/ergodox/\_\_init__.py](#keymapviz/keyboards/ergodox/__init__.py)
+  - [keymapviz/keyboards/lets_split/\_\_init\_\_.py](https://github.com/yskoht/keymapviz/blob/develop/keymapviz/keyboards/lets_split/__init__.py)
+  - [keymapviz/keyboards/ergodox/\_\_init\_\_.py](https://github.com/yskoht/keymapviz/blob/develop/keymapviz/keyboards/ergodox/__init__.py)
 
-### Adding keymapviz/keyboards/*keyboard_name*/layout_editor.json
+### Adding keymapviz/keyboards/_keyboard_name_/layout_editor/default.json
 
 Download json of your keyboard from [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/) and replace legend with `{number}`. Please refer to the file.
 
-- [keymapviz/keyboards/lets_split/layout_editor.json](#keymapviz/keyboards/lets_split/layout_editor.json)
+- [keymapviz/keyboards/lets_split/layout_editor/default.json](https://github.com/yskoht/keymapviz/blob/develop/keymapviz/keyboards/lets_split/layout_editor/default.json)
 
-### Fixing keymapviz/\_\_init__.py
+### Fixing keymapviz/\_\_init\_\_.py
 
 Add keyboard.
 
