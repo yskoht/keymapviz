@@ -101,6 +101,14 @@ exe('diff -u expect/helix_10.json  helix_10.json')
 exe('diff -u expect/helix_11.json  helix_11.json')
 
 # kaishi65
+exe('keymapviz ./qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c -o kaishi65.c')
+exe('keymapviz ./qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c -o kaishi65_fancy.c -t fancy')
+exe('keymapviz ./qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c -o kaishi65_{}.json -t json')
+
+exe('diff -u expect/kaishi65.c        kaishi65.c')
+exe('diff -u expect/kaishi65_fancy.c  kaishi65_fancy.c')
+exe('diff -u expect/kaishi65_0.json   kaishi65_0.json')
+exe('diff -u expect/kaishi65_1.json   kaishi65_1.json')
 
 # kinesis
 exe('keymapviz ./qmk_firmware/keyboards/kinesis/keymaps/default/keymap.c -o kinesis.c')
@@ -163,8 +171,28 @@ exe('diff -u expect/mint60_0.json  mint60_0.json')
 exe('diff -u expect/mint60_1.json  mint60_1.json')
 
 # moonlander
+exe('keymapviz ./qmk_firmware/keyboards/moonlander/keymaps/default/keymap.c -o moonlander.c')
+exe('keymapviz ./qmk_firmware/keyboards/moonlander/keymaps/default/keymap.c -o moonlander_fancy.c -t fancy')
+exe('keymapviz ./qmk_firmware/keyboards/moonlander/keymaps/default/keymap.c -o moonlander_{}.json -t json')
+
+exe('diff -u expect/moonlander.c       moonlander.c')
+exe('diff -u expect/moonlander_fancy.c moonlander_fancy.c')
+exe('diff -u expect/moonlander_0.json  moonlander_0.json')
+exe('diff -u expect/moonlander_1.json  moonlander_1.json')
+exe('diff -u expect/moonlander_2.json  moonlander_2.json')
 
 # sofle
+exe('keymapviz ./qmk_firmware/keyboards/sofle/keymaps/default/keymap.c -o sofle.c')
+exe('keymapviz ./qmk_firmware/keyboards/sofle/keymaps/default/keymap.c -o sofle_fancy.c -t fancy')
+exe('keymapviz ./qmk_firmware/keyboards/sofle/keymaps/default/keymap.c -o sofle_{}.json -t json')
+
+exe('diff -u expect/sofle.c        sofle.c')
+exe('diff -u expect/sofle_fancy.c  sofle_fancy.c')
+exe('diff -u expect/sofle_0.json   sofle_0.json')
+exe('diff -u expect/sofle_1.json   sofle_1.json')
+exe('diff -u expect/sofle_2.json   sofle_2.json')
+exe('diff -u expect/sofle_3.json   sofle_3.json')
+exe('diff -u expect/sofle_4.json   sofle_4.json')
 
 # sweet16
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16.c')
