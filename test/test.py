@@ -219,6 +219,9 @@ exe('diff -u expect/sweet16_0.json  sweet16_0.json')
 exe('keymapviz -r -k lets_split ./input/replace_lets_split_keymap.c >/dev/null 2>&1')
 exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.c')
 
+exe('keymapviz -r -k lets_split -t fancy ./input/replace_lets_split_keymap_fancy.c >/dev/null 2>&1')
+exe('diff -u expect/replace_lets_split_keymap_fancy.c input/replace_lets_split_keymap_fancy.c')
+
 # custom config
 exe('keymapviz -k lets_split ./input/custom_legends_lets_split_keymap.c -c ./input/custom_legends_config.properties -o custom_legends_lets_split.c')
 exe('diff -u expect/custom_legends_lets_split.c custom_legends_lets_split.c')
