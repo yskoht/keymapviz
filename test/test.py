@@ -55,6 +55,18 @@ exe('diff -u expect/ergodash_1.json  ergodash_1.json')
 exe('diff -u expect/ergodash_2.json  ergodash_2.json')
 exe('diff -u expect/ergodash_3.json  ergodash_3.json')
 
+# ergodash (2u_inner)
+exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner.c')
+exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_fancy.c -t fancy ')
+exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_{}.json -t json')
+
+exe('diff -u expect/ergodash_L2u_inner.c       ergodash_L2u_inner.c')
+exe('diff -u expect/ergodash_L2u_inner_fancy.c ergodash_L2u_inner_fancy.c')
+exe('diff -u expect/ergodash_L2u_inner_0.json  ergodash_L2u_inner_0.json')
+exe('diff -u expect/ergodash_L2u_inner_1.json  ergodash_L2u_inner_1.json')
+exe('diff -u expect/ergodash_L2u_inner_2.json  ergodash_L2u_inner_2.json')
+exe('diff -u expect/ergodash_L2u_inner_3.json  ergodash_L2u_inner_3.json')
+
 # ergodox_ez
 exe('keymapviz ./qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c -o ergodox.c')
 exe('keymapviz ./qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c -o ergodox_fancy.c -t fancy')
