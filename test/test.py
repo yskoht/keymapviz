@@ -13,28 +13,40 @@ def exe(cmd):
 
 exe('keymapviz ./qmk_firmware/keyboards/crkbd/keymaps/default/keymap.c -o crkbd.c')
 exe('keymapviz ./qmk_firmware/keyboards/crkbd/keymaps/default/keymap.c -o crkbd_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/ergo42/keymaps/default/keymap.c -o ergo42.c')
 exe('keymapviz ./qmk_firmware/keyboards/ergo42/keymaps/default/keymap.c -o ergo42_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -o ergodash.c')
 exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -o ergodash_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c -o ergodox.c')
 exe('keymapviz ./qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c -o ergodox_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/fortitude60/keymaps/default/keymap.c -o fortitude60.c')
 exe('keymapviz ./qmk_firmware/keyboards/fortitude60/keymaps/default/keymap.c -o fortitude60_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/helix/rev2/keymaps/default/keymap.c -o helix.c')
 exe('keymapviz ./qmk_firmware/keyboards/helix/rev2/keymaps/default/keymap.c -o helix_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/kinesis/keymaps/default/keymap.c -o kinesis.c')
 exe('keymapviz ./qmk_firmware/keyboards/kinesis/keymaps/default/keymap.c -o kinesis_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o lets_split.c')
 exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o lets_split_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60.c')
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/splitkb/kyria/keymaps/default/keymap.c -o kyria.c')
 exe('keymapviz ./qmk_firmware/keyboards/splitkb/kyria/keymaps/default/keymap.c -o kyria_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily58.c')
 exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily58_{}.json -t json')
+
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16.c')
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16_{}.json -t json')
+
 exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6.c')
 exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6_fancy.c -t fancy')
 exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6_{}.json -t json')
