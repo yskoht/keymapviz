@@ -211,4 +211,6 @@ exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.
 exe('keymapviz -k lets_split ./input/custom_legends_lets_split_keymap.c -c ./input/custom_legends_config.properties -o custom_legends_lets_split.c')
 exe('diff -u expect/custom_legends_lets_split.c custom_legends_lets_split.c')
 
+if status:
+    print('\nAll test were passed successfully!')
 sys.exit(0 if status else 1)
