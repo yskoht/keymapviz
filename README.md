@@ -35,7 +35,7 @@ $ pip3 install keymapviz
 
 ## Usage
 
-Output ascii art.
+### Output ascii art
 
 ```sh
 $ keymapviz qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
@@ -109,7 +109,8 @@ $ keymapviz qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c
  */
 ```
 
-Legend replacements.
+### Legend replacements
+
 A config file containing legend replacements can be provided to change the legends to your liking. It should have a section named 'legends' and e.g. look like:
 
 ```
@@ -135,11 +136,12 @@ $ ls lets_split*.json
 lets_split0.json  lets_split1.json  lets_split2.json  lets_split3.json  lets_split4.json  lets_split5.json
 ```
 
-Output fancy ascii art.
+### Output fancy ascii art
+
 Uses unicode symbols for drawing the box outlines.
 
 ```sh
-$ keymapviz  -t fancy ~/qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c
+$ keymapviz -t fancy qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c
 
 /*┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┬────┐
  *│ES │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ MI│ EQ│  BS   │ GR │
@@ -170,11 +172,17 @@ $ keymapviz  -t fancy ~/qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default
  */
 ```
 
-Replace ascii-art in keymap.c. (Generate backup as keymap.c.bac)
+### Replace ascii-art in keymap.c
+
+Generate backup as keymap.c.bac
 
 ```sh
 $ keymapviz -r keymap.c
 ```
+
+## Contributing
+
+Please see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 
