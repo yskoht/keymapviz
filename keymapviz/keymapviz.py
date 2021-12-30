@@ -9,7 +9,7 @@ import keymapviz
 from keymapviz.legends import *
 
 
-VERSION = 'v1.9.1'
+VERSION = 'v1.10.0'
 
 TYPES = {
     'ascii': 'ascii_art',

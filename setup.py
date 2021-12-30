@@ -19,7 +19,7 @@ json_files = search_json_files()
 
 setup(
     name='keymapviz',
-    version='1.9.1',
+    version='1.10.0',
     description='keymap.c visualizer',
     long_description=long_description,
     long_description_content_type='text/markdown',
