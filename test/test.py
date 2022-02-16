@@ -226,6 +226,34 @@ exe('diff -u expect/replace_lets_split_keymap_fancy.c input/replace_lets_split_k
 exe('keymapviz -k lets_split ./input/custom_legends_lets_split_keymap.c -c ./input/custom_legends_config.properties -o custom_legends_lets_split.c')
 exe('diff -u expect/custom_legends_lets_split.c custom_legends_lets_split.c')
 
+# planck (grid)
+exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid.c -l grid')
+exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid_fancy.c -t fancy -l grid')
+exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid_{}.json -t json -l grid')
+
+exe('diff -u expect/planck_grid.c       planck_grid.c')
+exe('diff -u expect/planck_grid_fancy.c planck_grid_fancy.c')
+exe('diff -u expect/planck_grid_0.json  planck_grid_0.json')
+exe('diff -u expect/planck_grid_1.json  planck_grid_1.json')
+exe('diff -u expect/planck_grid_2.json  planck_grid_2.json')
+exe('diff -u expect/planck_grid_3.json  planck_grid_3.json')
+exe('diff -u expect/planck_grid_4.json  planck_grid_4.json')
+exe('diff -u expect/planck_grid_5.json  planck_grid_5.json')
+
+# planck (mit)
+exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/rootiest/keymap.c -o planck_mit.c -l mit')
+exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/rootiest/keymap.c -o planck_mit_fancy.c -t fancy -l mit')
+exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/rootiest/keymap.c -o planck_mit_{}.json -t json -l mit')
+
+exe('diff -u expect/planck_mit.c       planck_mit.c')
+exe('diff -u expect/planck_mit_fancy.c planck_mit_fancy.c')
+exe('diff -u expect/planck_mit_0.json  planck_mit_0.json')
+exe('diff -u expect/planck_mit_1.json  planck_mit_1.json')
+exe('diff -u expect/planck_mit_2.json  planck_mit_2.json')
+exe('diff -u expect/planck_mit_3.json  planck_mit_3.json')
+exe('diff -u expect/planck_mit_4.json  planck_mit_4.json')
+exe('diff -u expect/planck_mit_5.json  planck_mit_5.json')
+
 if status:
     print('\nAll test were passed successfully!')
 sys.exit(0 if status else 1)
