@@ -33,9 +33,9 @@ exe('diff -u expect/dactyl_manuform5x6_fancy.c dactyl_manuform5x6_fancy.c')
 exe('diff -u expect/dactyl_manuform5x6_0.json  dactyl_manuform5x6_0.json')
 
 # ergo42
-exe('keymapviz ./qmk_firmware/keyboards/ergo42/keymaps/default/keymap.c -o ergo42.c')
-exe('keymapviz ./qmk_firmware/keyboards/ergo42/keymaps/default/keymap.c -o ergo42_fancy.c -t fancy')
-exe('keymapviz ./qmk_firmware/keyboards/ergo42/keymaps/default/keymap.c -o ergo42_{}.json -t json')
+exe('keymapviz ./qmk_firmware/keyboards/biacco42/ergo42/keymaps/default/keymap.c -o ergo42.c')
+exe('keymapviz ./qmk_firmware/keyboards/biacco42/ergo42/keymaps/default/keymap.c -o ergo42_fancy.c -t fancy')
+exe('keymapviz ./qmk_firmware/keyboards/biacco42/ergo42/keymaps/default/keymap.c -o ergo42_{}.json -t json')
 
 exe('diff -u expect/ergo42.c       ergo42.c')
 exe('diff -u expect/ergo42_fancy.c ergo42_fancy.c')
@@ -44,9 +44,9 @@ exe('diff -u expect/ergo42_1.json  ergo42_1.json')
 exe('diff -u expect/ergo42_2.json  ergo42_2.json')
 
 # ergodash
-exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -o ergodash.c')
-exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -o ergodash_fancy.c -t fancy')
-exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -o ergodash_{}.json -t json')
+exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -o ergodash.c')
+exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -o ergodash_fancy.c -t fancy')
+exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -o ergodash_{}.json -t json')
 
 exe('diff -u expect/ergodash.c       ergodash.c')
 exe('diff -u expect/ergodash_fancy.c ergodash_fancy.c')
@@ -56,9 +56,9 @@ exe('diff -u expect/ergodash_2.json  ergodash_2.json')
 exe('diff -u expect/ergodash_3.json  ergodash_3.json')
 
 # ergodash (2u_inner)
-exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner.c')
-exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_fancy.c -t fancy ')
-exe('keymapviz ./qmk_firmware/keyboards/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_{}.json -t json')
+exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner.c')
+exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_fancy.c -t fancy ')
+exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_{}.json -t json')
 
 exe('diff -u expect/ergodash_L2u_inner.c       ergodash_L2u_inner.c')
 exe('diff -u expect/ergodash_L2u_inner_fancy.c ergodash_L2u_inner_fancy.c')
