@@ -3,7 +3,7 @@
         {
             "a": 7
         },
-        "Tab",
+        "GESC",
         "Q",
         "W",
         "E",
@@ -14,10 +14,10 @@
         "I",
         "O",
         "P",
-        "Back Space"
+        "BSPC",
+        "LT(_TABULA,KC_TAB)"
     ],
     [
-        "Esc",
         "A",
         "S",
         "D",
@@ -27,11 +27,11 @@
         "J",
         "K",
         "L",
-        ";",
-        "'"
+        "SCLN",
+        "QUOT",
+        "TD(TD_LSHFT_CAPS)"
     ],
     [
-        "Shift",
         "Z",
         "X",
         "C",
@@ -39,22 +39,26 @@
         "B",
         "N",
         "M",
-        ",",
-        ".",
-        "/",
-        "Return"
+        "COMM",
+        "DOT",
+        "SLSH",
+        "SFTENT",
+        "TD(TD_LCTL_STICKY)"
     ],
     [
-        "Ctrl",
-        "Alt",
-        "Super",
-        "&dArr;",
-        "Space",
-        "Spc",
-        "&uArr;",
-        "&larr;",
-        "&darr;",
-        "&uarr;",
-        "&rarr;"
+        "LEAD",
+        "LGUI",
+        "TD(TD_LALT_STICKY)",
+        "MO(_SYMBLS)",
+        "SPC",
+        {
+            "w": 2
+        },
+        "MO(_NUMBRS)",
+        "LEFT",
+        "DOWN",
+        "UP",
+        "RGHT",
+        ""
     ]
 ]

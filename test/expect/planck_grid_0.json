@@ -3,7 +3,7 @@
         {
             "a": 7
         },
-        "Tab",
+        "TAB",
         "Q",
         "W",
         "E",
@@ -14,10 +14,10 @@
         "I",
         "O",
         "P",
-        "Back Space"
+        "BSPC",
+        "ESC"
     ],
     [
-        "Esc",
         "A",
         "S",
         "D",
@@ -27,11 +27,11 @@
         "J",
         "K",
         "L",
-        ";",
-        "'"
+        "SCLN",
+        "QUOT",
+        "LSFT"
     ],
     [
-        "Shift",
         "Z",
         "X",
         "C",
@@ -39,25 +39,24 @@
         "B",
         "N",
         "M",
-        ",",
-        ".",
-        "/",
-        "Return"
+        "COMM",
+        "DOT",
+        "SLSH",
+        "ENT",
+        "BACKLIT"
     ],
     [
-        "",
-        "Ctrl",
-        "Alt",
-        "Super",
-        "&dArr;",
-        {
-            "w": 2
-        },
-        "",
-        "&uArr;",
-        "&larr;",
-        "&darr;",
-        "&uarr;",
-        "&rarr;"
+        "LCTL",
+        "LALT",
+        "LGUI",
+        "LOWER",
+        "SPC",
+        "SPC",
+        "RAISE",
+        "LEFT",
+        "DOWN",
+        "UP",
+        "RGHT",
+        ""
     ]
 ]
