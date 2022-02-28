@@ -23,6 +23,7 @@ import keymapviz.keyboards.sweet16
 import keymapviz.keyboards.dactyl_manuform5x6
 import keymapviz.keyboards.sofle
 import keymapviz.keyboards.moonlander
+import keymapviz.keyboards.planck
 import keymapviz.keyboards.dactyl_manuform6x6
 
 
@@ -45,6 +46,7 @@ KEYBOARDS = {
     'dactyl_manuform5x6': keymapviz.keyboards.dactyl_manuform5x6,
     'sofle': keymapviz.keyboards.sofle,
     'moonlander': keymapviz.keyboards.moonlander,
+    'planck': keymapviz.keyboards.planck,
     'dactyl_manuform6x6': keymapviz.keyboards.dactyl_manuform6x6,
 }
 
