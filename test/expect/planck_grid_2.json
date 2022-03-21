@@ -14,10 +14,10 @@
         "C",
         "R",
         "L",
-        "BSPC",
-        "ESC"
+        "BSPC"
     ],
     [
+        "ESC",
         "A",
         "O",
         "E",
@@ -28,10 +28,10 @@
         "T",
         "N",
         "S",
-        "SLSH",
-        "LSFT"
+        "SLSH"
     ],
     [
+        "LSFT",
         "SCLN",
         "Q",
         "J",
@@ -42,10 +42,10 @@
         "W",
         "V",
         "Z",
-        "ENT",
-        "BACKLIT"
+        "ENT"
     ],
     [
+        "BACKLIT",
         "LCTL",
         "LALT",
         "LGUI",
@@ -56,7 +56,6 @@
         "LEFT",
         "DOWN",
         "UP",
-        "RGHT",
-        ""
+        "RGHT"
     ]
 ]

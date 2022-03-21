@@ -14,10 +14,10 @@
         "P7",
         "P8",
         "P9",
-        "BSPC",
-        "TILD"
+        "BSPC"
     ],
     [
+        "TILD",
         "LEFT",
         "DOWN",
         "RGHT",
@@ -28,10 +28,10 @@
         "P4",
         "P5",
         "P6",
-        "PMNS",
-        "LSFT"
+        "PMNS"
     ],
     [
+        "LSFT",
         "SLSH",
         "CUT",
         "COPY",
@@ -42,23 +42,22 @@
         "P1",
         "P2",
         "P3",
-        "PPLS",
-        "TO(_BASE)"
+        "PPLS"
     ],
     [
+        "TO(_BASE)",
         "LEAD",
         "LGUI",
         "LALT",
         "LCPO",
-        "SPC",
         {
             "w": 2
         },
+        "SPC",
         "RCPC",
         "HASH",
         "P0",
         "PDOT",
-        "PENT",
-        ""
+        "PENT"
     ]
 ]

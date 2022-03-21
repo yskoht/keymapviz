@@ -14,10 +14,10 @@
         "UC_M_WC",
         "CG_TOGG",
         "AG_TOGG",
-        "BSPC",
-        "TAB"
+        "BSPC"
     ],
     [
+        "TAB",
         "MS_L",
         "MS_D",
         "MS_R",
@@ -28,10 +28,10 @@
         "VLK_TOG",
         "",
         "",
-        "",
-        "LSFT"
+        ""
     ],
     [
+        "LSFT",
         "UNDO",
         "CUT",
         "COPY",
@@ -42,23 +42,22 @@
         "HOME",
         "BTN3",
         "END",
-        "SFTENT",
-        "TO(_BASE)"
+        "SFTENT"
     ],
     [
+        "TO(_BASE)",
         "LCTL",
         "LGUI",
         "LALT",
         "BTN1",
-        "ALT_TAB",
         {
             "w": 2
         },
+        "ALT_TAB",
         "BTN2",
         "WH_L",
         "WH_D",
         "WH_U",
-        "WH_R",
-        ""
+        "WH_R"
     ]
 ]

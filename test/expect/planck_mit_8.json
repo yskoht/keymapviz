@@ -14,10 +14,10 @@
         "UC_M_WC",
         "CG_TOGG",
         "AG_TOGG",
-        "DLINE",
-        "NXTAB"
+        "DLINE"
     ],
     [
+        "NXTAB",
         "SLCTALL",
         "SAVE",
         "",
@@ -28,10 +28,10 @@
         "LCUT",
         "LCOPY",
         "",
-        "KILL",
-        "LSFT"
+        "KILL"
     ],
     [
+        "LSFT",
         "UNDO",
         "CUT",
         "COPY",
@@ -42,23 +42,22 @@
         "",
         "HOME",
         "END",
-        "SFTENT",
-        "TO(_BASE)"
+        "SFTENT"
     ],
     [
+        "TO(_BASE)",
         "LCTL",
         "LGUI",
         "LALT",
         "LSPO",
-        "ALT_TAB",
         {
             "w": 2
         },
+        "ALT_TAB",
         "RSPC",
         "PRVWD",
         "BRID",
         "BRIU",
-        "NXTWD",
-        ""
+        "NXTWD"
     ]
 ]

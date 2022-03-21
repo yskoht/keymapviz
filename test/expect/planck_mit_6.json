@@ -14,10 +14,10 @@
         "RGB_SAD",
         "TD(TD_DEG_DEGF)",
         "TD(TD_SMILEY)",
-        "DEL",
-        "RGB_VAI"
+        "DEL"
     ],
     [
+        "RGB_VAI",
         "RGB_VAD",
         "MU_MOD",
         "AU_ON",
@@ -28,10 +28,10 @@
         "DF(_COLEMAK)",
         "DF(_DVORAK)",
         "TO(_PLOVER)",
-        "MY_RGBCON",
-        ""
+        "MY_RGBCON"
     ],
     [
+        "",
         "MUV_DE",
         "MUV_IN",
         "MU_ON",
@@ -42,19 +42,18 @@
         "TERM_OFF",
         "CK_ON",
         "CK_OFF",
-        "ENTER",
-        ""
+        "ENTER"
     ],
     [
         "",
         "",
         "",
         "",
-        "TG(_MOUSY)",
+        "",
         {
             "w": 2
         },
-        "",
+        "TG(_MOUSY)",
         "",
         "",
         "",

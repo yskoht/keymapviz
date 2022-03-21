@@ -14,10 +14,10 @@
         "RGB_SAD",
         "RGB_VAI",
         "RGB_VAD",
-        "DEL",
-        ""
+        "DEL"
     ],
     [
+        "",
         "",
         "MU_MOD",
         "AU_ON",
@@ -28,10 +28,10 @@
         "COLEMAK",
         "DVORAK",
         "PLOVER",
-        "",
         ""
     ],
     [
+        "",
         "MUV_DE",
         "MUV_IN",
         "MU_ON",
@@ -40,7 +40,6 @@
         "MI_OFF",
         "TERM_ON",
         "TERM_OFF",
-        "",
         "",
         "",
         ""

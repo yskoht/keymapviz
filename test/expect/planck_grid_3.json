@@ -14,10 +14,10 @@
         "ASTR",
         "LPRN",
         "RPRN",
-        "BSPC",
-        "DEL"
+        "BSPC"
     ],
     [
+        "DEL",
         "F1",
         "F2",
         "F3",
@@ -28,10 +28,10 @@
         "PLUS",
         "LCBR",
         "RCBR",
-        "PIPE",
-        ""
+        "PIPE"
     ],
     [
+        "",
         "F7",
         "F8",
         "F9",
@@ -42,7 +42,6 @@
         "S(KC_NUBS)",
         "HOME",
         "END",
-        "",
         ""
     ],
     [
@@ -53,10 +52,10 @@
         "",
         "",
         "",
+        "",
         "MNXT",
         "VOLD",
         "VOLU",
-        "MPLY",
-        ""
+        "MPLY"
     ]
 ]
