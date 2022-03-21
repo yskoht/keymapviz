@@ -240,7 +240,6 @@ exe('diff -u expect/planck_grid_3.json  planck_default_3.json')
 exe('diff -u expect/planck_grid_4.json  planck_default_4.json')
 exe('diff -u expect/planck_grid_5.json  planck_default_5.json')
 
-
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid.c -l grid')
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid_fancy.c -t fancy -l grid')
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid_{}.json -t json -l grid')

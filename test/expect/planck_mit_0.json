@@ -14,10 +14,10 @@
         "I",
         "O",
         "P",
-        "BSPC",
-        "LT(_TABULA,KC_TAB)"
+        "BSPC"
     ],
     [
+        "LT(_TABULA,KC_TAB)",
         "A",
         "S",
         "D",
@@ -28,10 +28,10 @@
         "K",
         "L",
         "SCLN",
-        "QUOT",
-        "TD(TD_LSHFT_CAPS)"
+        "QUOT"
     ],
     [
+        "TD(TD_LSHFT_CAPS)",
         "Z",
         "X",
         "C",
@@ -42,23 +42,22 @@
         "COMM",
         "DOT",
         "SLSH",
-        "SFTENT",
-        "TD(TD_LCTL_STICKY)"
+        "SFTENT"
     ],
     [
+        "TD(TD_LCTL_STICKY)",
         "LEAD",
         "LGUI",
         "TD(TD_LALT_STICKY)",
         "MO(_SYMBLS)",
-        "SPC",
         {
             "w": 2
         },
+        "SPC",
         "MO(_NUMBRS)",
         "LEFT",
         "DOWN",
         "UP",
-        "RGHT",
-        ""
+        "RGHT"
     ]
 ]
