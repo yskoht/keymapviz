@@ -24,6 +24,7 @@ Following keyboards are supported.
 - [dactyl_manuform5x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/5x6)
 - [sofle](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle)
 - [moonlander](https://github.com/qmk/qmk_firmware/tree/master/keyboards/moonlander)
+- [planck](https://github.com/qmk/qmk_firmware/tree/master/keyboards/planck) (layout: `default`(=`grid`), `mit`)
 - [dactyl_manuform6x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/6x6)
 
 ## Install
