@@ -268,5 +268,5 @@ exe('diff -u expect/planck_mit_4.json  planck_mit_4.json')
 exe('diff -u expect/planck_mit_5.json  planck_mit_5.json')
 
 if status:
-    print('\nAll test were passed successfully!')
+    print('\nAll tests were passed successfully!')
 sys.exit(0 if status else 1)
