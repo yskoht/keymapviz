@@ -8,24 +8,25 @@ Keymapviz can convert keymap.c in [qmk_firmware](https://github.com/qmk/qmk_firm
 Following keyboards are supported.
 
 - [crkbd](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd)
+- [dactyl_manuform5x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/5x6)
+- [dactyl_manuform6x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/6x6)
 - [ergo42](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergo42)
 - [ergodash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash) (layout: `default`, `2u_inner`)
 - [ergodone](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodone)(ergodox)
 - [ergodox_ez](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox_ez)(ergodox)
 - [fortitude60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/fortitude60)
 - [helix](https://github.com/qmk/qmk_firmware/tree/master/keyboards/helix)
+- [id75](https://github.com/qmk/qmk_firmware/tree/master/keyboards/idobao/id75)
 - [kaishi65](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kbdclack/kaishi65)
 - [kinesis](https://github.com/qmk/qmk_firmware/tree/master/keyboards/kinesis)
 - [kyria](https://github.com/qmk/qmk_firmware/tree/master/keyboards/splitkb/kyria)
 - [lets_split](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split)
 - [lily58](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58)
 - [mint60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/mint60)
-- [sweet16](https://github.com/qmk/qmk_firmware/tree/master/keyboards/1upkeyboards/sweet16)
-- [dactyl_manuform5x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/5x6)
-- [sofle](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle)
 - [moonlander](https://github.com/qmk/qmk_firmware/tree/master/keyboards/moonlander)
 - [planck](https://github.com/qmk/qmk_firmware/tree/master/keyboards/planck) (layout: `default`(=`grid`), `mit`)
-- [dactyl_manuform6x6](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/6x6)
+- [sofle](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle)
+- [sweet16](https://github.com/qmk/qmk_firmware/tree/master/keyboards/1upkeyboards/sweet16)
 
 ## Install
 

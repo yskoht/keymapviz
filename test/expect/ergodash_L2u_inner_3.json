@@ -32,7 +32,7 @@
             "y": -0.5
         },
         "",
-        "RESET",
+        "QK_BOOT",
         "RGB_TOG",
         "RGB_MOD",
         "RGB_HUD",
