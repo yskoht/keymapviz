@@ -4,7 +4,7 @@
             "a": 7
         },
         "",
-        "RESET",
+        "QK_BOOT",
         "DEBUG",
         "RGB_TOG",
         "RGB_MOD",
@@ -38,8 +38,8 @@
         "MU_OFF",
         "MI_ON",
         "MI_OFF",
-        "TERM_ON",
-        "TERM_OFF",
+        "",
+        "",
         "",
         "",
         ""
