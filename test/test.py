@@ -267,6 +267,16 @@ exe('diff -u expect/planck_mit_3.json  planck_mit_3.json')
 exe('diff -u expect/planck_mit_4.json  planck_mit_4.json')
 exe('diff -u expect/planck_mit_5.json  planck_mit_5.json')
 
+# id75
+exe('keymapviz ./qmk_firmware/keyboards/idobao/id75/keymaps/default/keymap.c -o id75.c')
+exe('keymapviz ./qmk_firmware/keyboards/idobao/id75/keymaps/default/keymap.c -o id75_fancy.c -t fancy')
+exe('keymapviz ./qmk_firmware/keyboards/idobao/id75/keymaps/default/keymap.c -o id75_{}.json -t json')
+
+exe('diff -u expect/id75.c       id75.c')
+exe('diff -u expect/id75_fancy.c id75_fancy.c')
+exe('diff -u expect/id75_0.json  id75_0.json')
+exe('diff -u expect/id75_1.json  id75_1.json')
+
 if status:
     print('\nAll tests were passed successfully!')
 sys.exit(0 if status else 1)
