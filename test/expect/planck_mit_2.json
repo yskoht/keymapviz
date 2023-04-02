@@ -3,7 +3,7 @@
         {
             "a": 7
         },
-        "GESC",
+        "QK_GESC",
         "QUOT",
         "COMM",
         "DOT",
@@ -42,11 +42,11 @@
         "W",
         "V",
         "Z",
-        "SFTENT"
+        "SC_SENT"
     ],
     [
         "TD(TD_LCTL_STICKY)",
-        "LEAD",
+        "QK_LEAD",
         "LGUI",
         "TD(TD_LALT_STICKY)",
         "MO(_SYMBLS)",
