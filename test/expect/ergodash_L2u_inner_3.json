@@ -66,8 +66,8 @@
         "",
         "BL_TOGG",
         "BL_BRTG",
-        "BL_INC",
-        "BL_DEC",
+        "BL_UP",
+        "BL_DOWN",
         {
             "x": 4
         },
