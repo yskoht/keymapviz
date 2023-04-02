@@ -2,7 +2,7 @@ import sys
 import subprocess
 
 status = True
-
+updateSnapshot = '-u' in sys.argv
 
 def exe(cmd):
     global status
@@ -23,6 +23,15 @@ exe('diff -u expect/crkbd_1.json  crkbd_1.json')
 exe('diff -u expect/crkbd_2.json  crkbd_2.json')
 exe('diff -u expect/crkbd_3.json  crkbd_3.json')
 
+if updateSnapshot:
+    exe('cp crkbd.c       expect/crkbd.c')
+    exe('cp crkbd_fancy.c expect/crkbd_fancy.c')
+    exe('cp crkbd_0.json  expect/crkbd_0.json')
+    exe('cp crkbd_1.json  expect/crkbd_1.json')
+    exe('cp crkbd_2.json  expect/crkbd_2.json')
+    exe('cp crkbd_3.json  expect/crkbd_3.json')
+
+
 # dactyl_manuform5x6
 exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6.c')
 exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/default/keymap.c -o dactyl_manuform5x6_fancy.c -t fancy')
@@ -31,6 +40,12 @@ exe('keymapviz -k dactyl_manuform5x6 ./qmk_firmware/keyboards/handwired/dactyl_m
 exe('diff -u expect/dactyl_manuform5x6.c       dactyl_manuform5x6.c')
 exe('diff -u expect/dactyl_manuform5x6_fancy.c dactyl_manuform5x6_fancy.c')
 exe('diff -u expect/dactyl_manuform5x6_0.json  dactyl_manuform5x6_0.json')
+
+if updateSnapshot:
+    exe('cp dactyl_manuform5x6.c       expect/dactyl_manuform5x6.c')
+    exe('cp dactyl_manuform5x6_fancy.c expect/dactyl_manuform5x6_fancy.c')
+    exe('cp dactyl_manuform5x6_0.json  expect/dactyl_manuform5x6_0.json')
+
 
 # ergo42
 exe('keymapviz ./qmk_firmware/keyboards/biacco42/ergo42/keymaps/default/keymap.c -o ergo42.c')
@@ -42,6 +57,14 @@ exe('diff -u expect/ergo42_fancy.c ergo42_fancy.c')
 exe('diff -u expect/ergo42_0.json  ergo42_0.json')
 exe('diff -u expect/ergo42_1.json  ergo42_1.json')
 exe('diff -u expect/ergo42_2.json  ergo42_2.json')
+
+if updateSnapshot:
+    exe('cp ergo42.c       expect/ergo42.c')
+    exe('cp ergo42_fancy.c expect/ergo42_fancy.c')
+    exe('cp ergo42_0.json  expect/ergo42_0.json')
+    exe('cp ergo42_1.json  expect/ergo42_1.json')
+    exe('cp ergo42_2.json  expect/ergo42_2.json')
+
 
 # ergodash
 exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -o ergodash.c')
@@ -55,6 +78,15 @@ exe('diff -u expect/ergodash_1.json  ergodash_1.json')
 exe('diff -u expect/ergodash_2.json  ergodash_2.json')
 exe('diff -u expect/ergodash_3.json  ergodash_3.json')
 
+if updateSnapshot:
+    exe('cp ergodash.c       expect/ergodash.c')
+    exe('cp ergodash_fancy.c expect/ergodash_fancy.c')
+    exe('cp ergodash_0.json  expect/ergodash_0.json')
+    exe('cp ergodash_1.json  expect/ergodash_1.json')
+    exe('cp ergodash_2.json  expect/ergodash_2.json')
+    exe('cp ergodash_3.json  expect/ergodash_3.json')
+
+
 # ergodash (2u_inner)
 exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner.c')
 exe('keymapviz ./qmk_firmware/keyboards/omkbd/ergodash/rev1/keymaps/default/keymap.c -l 2u_inner -o ergodash_L2u_inner_fancy.c -t fancy ')
@@ -67,6 +99,15 @@ exe('diff -u expect/ergodash_L2u_inner_1.json  ergodash_L2u_inner_1.json')
 exe('diff -u expect/ergodash_L2u_inner_2.json  ergodash_L2u_inner_2.json')
 exe('diff -u expect/ergodash_L2u_inner_3.json  ergodash_L2u_inner_3.json')
 
+if updateSnapshot:
+    exe('cp ergodash_L2u_inner.c       expect/ergodash_L2u_inner.c')
+    exe('cp ergodash_L2u_inner_fancy.c expect/ergodash_L2u_inner_fancy.c')
+    exe('cp ergodash_L2u_inner_0.json  expect/ergodash_L2u_inner_0.json')
+    exe('cp ergodash_L2u_inner_1.json  expect/ergodash_L2u_inner_1.json')
+    exe('cp ergodash_L2u_inner_2.json  expect/ergodash_L2u_inner_2.json')
+    exe('cp ergodash_L2u_inner_3.json  expect/ergodash_L2u_inner_3.json')
+
+
 # ergodox_ez
 exe('keymapviz ./qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c -o ergodox.c')
 exe('keymapviz ./qmk_firmware/keyboards/ergodox_ez/keymaps/default/keymap.c -o ergodox_fancy.c -t fancy')
@@ -77,6 +118,14 @@ exe('diff -u expect/ergodox_fancy.c ergodox_fancy.c')
 exe('diff -u expect/ergodox_0.json  ergodox_0.json')
 exe('diff -u expect/ergodox_1.json  ergodox_1.json')
 exe('diff -u expect/ergodox_2.json  ergodox_2.json')
+
+if updateSnapshot:
+    exe('cp ergodox.c       expect/ergodox.c')
+    exe('cp ergodox_fancy.c expect/ergodox_fancy.c')
+    exe('cp ergodox_0.json  expect/ergodox_0.json')
+    exe('cp ergodox_1.json  expect/ergodox_1.json')
+    exe('cp ergodox_2.json  expect/ergodox_2.json')
+
 
 # fortitude60
 exe('keymapviz ./qmk_firmware/keyboards/fortitude60/keymaps/default/keymap.c -o fortitude60.c')
@@ -91,6 +140,17 @@ exe('diff -u expect/fortitude60_2.json  fortitude60_2.json')
 exe('diff -u expect/fortitude60_3.json  fortitude60_3.json')
 exe('diff -u expect/fortitude60_4.json  fortitude60_4.json')
 exe('diff -u expect/fortitude60_5.json  fortitude60_5.json')
+
+if updateSnapshot:
+    exe('cp fortitude60.c       expect/fortitude60.c')
+    exe('cp fortitude60_fancy.c expect/fortitude60_fancy.c')
+    exe('cp fortitude60_0.json  expect/fortitude60_0.json')
+    exe('cp fortitude60_1.json  expect/fortitude60_1.json')
+    exe('cp fortitude60_2.json  expect/fortitude60_2.json')
+    exe('cp fortitude60_3.json  expect/fortitude60_3.json')
+    exe('cp fortitude60_4.json  expect/fortitude60_4.json')
+    exe('cp fortitude60_5.json  expect/fortitude60_5.json')
+
 
 # helix
 exe('keymapviz ./qmk_firmware/keyboards/helix/rev2/keymaps/default/keymap.c -o helix.c')
@@ -112,6 +172,23 @@ exe('diff -u expect/helix_9.json   helix_9.json')
 exe('diff -u expect/helix_10.json  helix_10.json')
 exe('diff -u expect/helix_11.json  helix_11.json')
 
+if updateSnapshot:
+    exe('cp helix.c        expect/helix.c')
+    exe('cp helix_fancy.c  expect/helix_fancy.c')
+    exe('cp helix_0.json   expect/helix_0.json')
+    exe('cp helix_1.json   expect/helix_1.json')
+    exe('cp helix_2.json   expect/helix_2.json')
+    exe('cp helix_3.json   expect/helix_3.json')
+    exe('cp helix_4.json   expect/helix_4.json')
+    exe('cp helix_5.json   expect/helix_5.json')
+    exe('cp helix_6.json   expect/helix_6.json')
+    exe('cp helix_7.json   expect/helix_7.json')
+    exe('cp helix_8.json   expect/helix_8.json')
+    exe('cp helix_9.json   expect/helix_9.json')
+    exe('cp helix_10.json  expect/helix_10.json')
+    exe('cp helix_11.json  expect/helix_11.json')
+
+
 # kaishi65
 exe('keymapviz ./qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c -o kaishi65.c')
 exe('keymapviz ./qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/keymap.c -o kaishi65_fancy.c -t fancy')
@@ -122,6 +199,13 @@ exe('diff -u expect/kaishi65_fancy.c  kaishi65_fancy.c')
 exe('diff -u expect/kaishi65_0.json   kaishi65_0.json')
 exe('diff -u expect/kaishi65_1.json   kaishi65_1.json')
 
+if updateSnapshot:
+    exe('cp kaishi65.c        expect/kaishi65.c')
+    exe('cp kaishi65_fancy.c  expect/kaishi65_fancy.c')
+    exe('cp kaishi65_0.json   expect/kaishi65_0.json')
+    exe('cp kaishi65_1.json   expect/kaishi65_1.json')
+
+
 # kinesis
 exe('keymapviz ./qmk_firmware/keyboards/kinesis/keymaps/default/keymap.c -o kinesis.c')
 exe('keymapviz ./qmk_firmware/keyboards/kinesis/keymaps/default/keymap.c -o kinesis_fancy.c -t fancy')
@@ -130,6 +214,12 @@ exe('keymapviz ./qmk_firmware/keyboards/kinesis/keymaps/default/keymap.c -o kine
 exe('diff -u expect/kinesis.c       kinesis.c')
 exe('diff -u expect/kinesis_fancy.c kinesis_fancy.c')
 exe('diff -u expect/kinesis_0.json  kinesis_0.json')
+
+if updateSnapshot:
+    exe('cp kinesis.c        expect/kinesis.c')
+    exe('cp kinesis_fancy.c  expect/kinesis_fancy.c')
+    exe('cp kinesis_0.json   expect/kinesis_0.json')
+
 
 # kyria
 exe('keymapviz ./qmk_firmware/keyboards/splitkb/kyria/keymaps/default/keymap.c -o kyria.c')
@@ -146,6 +236,18 @@ exe('diff -u expect/kyria_4.json  kyria_4.json')
 exe('diff -u expect/kyria_5.json  kyria_5.json')
 exe('diff -u expect/kyria_6.json  kyria_6.json')
 
+if updateSnapshot:
+    exe('cp kyria.c        expect/kyria.c')
+    exe('cp kyria_fancy.c  expect/kyria_fancy.c')
+    exe('cp kyria_0.json   expect/kyria_0.json')
+    exe('cp kyria_1.json   expect/kyria_1.json')
+    exe('cp kyria_2.json   expect/kyria_2.json')
+    exe('cp kyria_3.json   expect/kyria_3.json')
+    exe('cp kyria_4.json   expect/kyria_4.json')
+    exe('cp kyria_5.json   expect/kyria_5.json')
+    exe('cp kyria_6.json   expect/kyria_6.json')
+
+
 # lets_split
 exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o lets_split.c')
 exe('keymapviz ./qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -o lets_split_fancy.c -t fancy')
@@ -160,6 +262,17 @@ exe('diff -u expect/lets_split_3.json  lets_split_3.json')
 exe('diff -u expect/lets_split_4.json  lets_split_4.json')
 exe('diff -u expect/lets_split_5.json  lets_split_5.json')
 
+if updateSnapshot:
+    exe('cp lets_split.c        expect/lets_split.c')
+    exe('cp lets_split_fancy.c  expect/lets_split_fancy.c')
+    exe('cp lets_split_0.json   expect/lets_split_0.json')
+    exe('cp lets_split_1.json   expect/lets_split_1.json')
+    exe('cp lets_split_2.json   expect/lets_split_2.json')
+    exe('cp lets_split_3.json   expect/lets_split_3.json')
+    exe('cp lets_split_4.json   expect/lets_split_4.json')
+    exe('cp lets_split_5.json   expect/lets_split_5.json')
+
+
 # lily58
 exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily58.c')
 exe('keymapviz ./qmk_firmware/keyboards/lily58/keymaps/default/keymap.c -o lily58_fancy.c -t fancy')
@@ -172,6 +285,15 @@ exe('diff -u expect/lily58_1.json  lily58_1.json')
 exe('diff -u expect/lily58_2.json  lily58_2.json')
 exe('diff -u expect/lily58_3.json  lily58_3.json')
 
+if updateSnapshot:
+    exe('cp lily58.c        expect/lily58.c')
+    exe('cp lily58_fancy.c  expect/lily58_fancy.c')
+    exe('cp lily58_0.json   expect/lily58_0.json')
+    exe('cp lily58_1.json   expect/lily58_1.json')
+    exe('cp lily58_2.json   expect/lily58_2.json')
+    exe('cp lily58_3.json   expect/lily58_3.json')
+
+
 # mint60
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60.c')
 exe('keymapviz ./qmk_firmware/keyboards/mint60/keymaps/default/keymap.c -o mint60_fancy.c -t fancy')
@@ -181,6 +303,12 @@ exe('diff -u expect/mint60.c       mint60.c')
 exe('diff -u expect/mint60_fancy.c mint60_fancy.c')
 exe('diff -u expect/mint60_0.json  mint60_0.json')
 exe('diff -u expect/mint60_1.json  mint60_1.json')
+
+if updateSnapshot:
+    exe('cp mint60.c        expect/mint60.c')
+    exe('cp mint60_fancy.c  expect/mint60_fancy.c')
+    exe('cp mint60_0.json   expect/mint60_0.json')
+    exe('cp mint60_1.json   expect/mint60_1.json')
 
 # moonlander
 exe('keymapviz ./qmk_firmware/keyboards/moonlander/keymaps/default/keymap.c -o moonlander.c')
@@ -192,6 +320,14 @@ exe('diff -u expect/moonlander_fancy.c moonlander_fancy.c')
 exe('diff -u expect/moonlander_0.json  moonlander_0.json')
 exe('diff -u expect/moonlander_1.json  moonlander_1.json')
 exe('diff -u expect/moonlander_2.json  moonlander_2.json')
+
+if updateSnapshot:
+    exe('cp moonlander.c        expect/moonlander.c')
+    exe('cp moonlander_fancy.c  expect/moonlander_fancy.c')
+    exe('cp moonlander_0.json   expect/moonlander_0.json')
+    exe('cp moonlander_1.json   expect/moonlander_1.json')
+    exe('cp moonlander_2.json   expect/moonlander_2.json')
+
 
 # sofle
 exe('keymapviz ./qmk_firmware/keyboards/sofle/keymaps/default/keymap.c -o sofle.c')
@@ -206,6 +342,14 @@ exe('diff -u expect/sofle_2.json   sofle_2.json')
 exe('diff -u expect/sofle_3.json   sofle_3.json')
 exe('diff -u expect/sofle_4.json   sofle_4.json')
 
+if updateSnapshot:
+    exe('cp sofle.c         expect/sofle.c')
+    exe('cp sofle_fancy.c   expect/sofle_fancy.c')
+    exe('cp sofle_0.json    expect/sofle_0.json')
+    exe('cp sofle_1.json    expect/sofle_1.json')
+    exe('cp sofle_2.json    expect/sofle_2.json')
+
+
 # sweet16
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16.c')
 exe('keymapviz ./qmk_firmware/keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c -o sweet16_fancy.c -t fancy')
@@ -215,16 +359,34 @@ exe('diff -u expect/sweet16.c       sweet16.c')
 exe('diff -u expect/sweet16_fancy.c sweet16_fancy.c')
 exe('diff -u expect/sweet16_0.json  sweet16_0.json')
 
+if updateSnapshot:
+    exe('cp sweet16.c        expect/sweet16.c')
+    exe('cp sweet16_fancy.c  expect/sweet16_fancy.c')
+    exe('cp sweet16_0.json   expect/sweet16_0.json')
+
+
 # replace option
 exe('keymapviz -r -k lets_split ./input/replace_lets_split_keymap.c >/dev/null 2>&1')
 exe('diff -u expect/replace_lets_split_keymap.c input/replace_lets_split_keymap.c')
 
+if updateSnapshot:
+    exe('cp input/replace_lets_split_keymap.c expect/replace_lets_split_keymap.c')
+
+
 exe('keymapviz -r -k lets_split -t fancy ./input/replace_lets_split_keymap_fancy.c >/dev/null 2>&1')
 exe('diff -u expect/replace_lets_split_keymap_fancy.c input/replace_lets_split_keymap_fancy.c')
+
+if updateSnapshot:
+    exe('cp input/replace_lets_split_keymap_fancy.c expect/replace_lets_split_keymap_fancy.c')
+
 
 # custom config
 exe('keymapviz -k lets_split ./input/custom_legends_lets_split_keymap.c -c ./input/custom_legends_config.properties -o custom_legends_lets_split.c')
 exe('diff -u expect/custom_legends_lets_split.c custom_legends_lets_split.c')
+
+if updateSnapshot:
+    exe('cp custom_legends_lets_split.c expect/custom_legends_lets_split.c')
+
 
 # planck (default/grid)
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_default.c')
@@ -240,6 +402,17 @@ exe('diff -u expect/planck_grid_3.json  planck_default_3.json')
 exe('diff -u expect/planck_grid_4.json  planck_default_4.json')
 exe('diff -u expect/planck_grid_5.json  planck_default_5.json')
 
+if updateSnapshot:
+    exe('cp planck_default.c        expect/planck_grid.c')
+    exe('cp planck_default_fancy.c  expect/planck_grid_fancy.c')
+    exe('cp planck_default_0.json   expect/planck_grid_0.json')
+    exe('cp planck_default_1.json   expect/planck_grid_1.json')
+    exe('cp planck_default_2.json   expect/planck_grid_2.json')
+    exe('cp planck_default_3.json   expect/planck_grid_3.json')
+    exe('cp planck_default_4.json   expect/planck_grid_4.json')
+    exe('cp planck_default_5.json   expect/planck_grid_5.json')
+
+
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid.c -l grid')
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid_fancy.c -t fancy -l grid')
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/default/keymap.c -o planck_grid_{}.json -t json -l grid')
@@ -252,6 +425,17 @@ exe('diff -u expect/planck_grid_2.json  planck_grid_2.json')
 exe('diff -u expect/planck_grid_3.json  planck_grid_3.json')
 exe('diff -u expect/planck_grid_4.json  planck_grid_4.json')
 exe('diff -u expect/planck_grid_5.json  planck_grid_5.json')
+
+if updateSnapshot:
+    exe('cp planck_grid.c        expect/planck_grid.c')
+    exe('cp planck_grid_fancy.c  expect/planck_grid_fancy.c')
+    exe('cp planck_grid_0.json   expect/planck_grid_0.json')
+    exe('cp planck_grid_1.json   expect/planck_grid_1.json')
+    exe('cp planck_grid_2.json   expect/planck_grid_2.json')
+    exe('cp planck_grid_3.json   expect/planck_grid_3.json')
+    exe('cp planck_grid_4.json   expect/planck_grid_4.json')
+    exe('cp planck_grid_5.json   expect/planck_grid_5.json')
+
 
 # planck (mit)
 exe('keymapviz ./qmk_firmware/keyboards/planck/keymaps/rootiest/keymap.c -o planck_mit.c -l mit')
@@ -267,6 +451,17 @@ exe('diff -u expect/planck_mit_3.json  planck_mit_3.json')
 exe('diff -u expect/planck_mit_4.json  planck_mit_4.json')
 exe('diff -u expect/planck_mit_5.json  planck_mit_5.json')
 
+if updateSnapshot:
+    exe('cp planck_mit.c        expect/planck_mit.c')
+    exe('cp planck_mit_fancy.c  expect/planck_mit_fancy.c')
+    exe('cp planck_mit_0.json   expect/planck_mit_0.json')
+    exe('cp planck_mit_1.json   expect/planck_mit_1.json')
+    exe('cp planck_mit_2.json   expect/planck_mit_2.json')
+    exe('cp planck_mit_3.json   expect/planck_mit_3.json')
+    exe('cp planck_mit_4.json   expect/planck_mit_4.json')
+    exe('cp planck_mit_5.json   expect/planck_mit_5.json')
+
+
 # id75
 exe('keymapviz ./qmk_firmware/keyboards/idobao/id75/keymaps/default/keymap.c -o id75.c')
 exe('keymapviz ./qmk_firmware/keyboards/idobao/id75/keymaps/default/keymap.c -o id75_fancy.c -t fancy')
@@ -276,6 +471,13 @@ exe('diff -u expect/id75.c       id75.c')
 exe('diff -u expect/id75_fancy.c id75_fancy.c')
 exe('diff -u expect/id75_0.json  id75_0.json')
 exe('diff -u expect/id75_1.json  id75_1.json')
+
+if updateSnapshot:
+    exe('cp id75.c        expect/id75.c')
+    exe('cp id75_fancy.c  expect/id75_fancy.c')
+    exe('cp id75_0.json   expect/id75_0.json')
+    exe('cp id75_1.json   expect/id75_1.json')
+
 
 if status:
     print('\nAll tests were passed successfully!')
