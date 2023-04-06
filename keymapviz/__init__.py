@@ -26,6 +26,7 @@ import keymapviz.keyboards.moonlander
 import keymapviz.keyboards.planck
 import keymapviz.keyboards.dactyl_manuform6x6
 import keymapviz.keyboards.id75
+import keymapviz.keyboards.ferris
 
 
 KEYBOARDS = {
@@ -50,6 +51,7 @@ KEYBOARDS = {
     'planck': keymapviz.keyboards.planck,
     'dactyl_manuform6x6': keymapviz.keyboards.dactyl_manuform6x6,
     'id75': keymapviz.keyboards.id75,
+    'ferris': keymapviz.keyboards.ferris,
 }
 
 
