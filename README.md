@@ -3,7 +3,8 @@
 [![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](PythonVersion)
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-Keymapviz can convert keymap.c in [qmk_firmware](https://github.com/qmk/qmk_firmware) to ascii art or json file.
+Keymapviz can convert keymap.c in [qmk_firmware](https://github.com/qmk/qmk_firmware)
+and .ino files in [Kaleidoscope](https://github.com/keyboardio/Kaleidoscope) to ascii art or json file.
 
 Following keyboards are supported.
 
@@ -28,6 +29,8 @@ Following keyboards are supported.
 - [sofle](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle)
 - [sweet16](https://github.com/qmk/qmk_firmware/tree/master/keyboards/1upkeyboards/sweet16)
 - [ferris](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ferris)
+- [model01](https://github.com/keyboardio/Kaleidoscope/tree/master/examples/Devices/Keyboardio/Model01) (Model01 and Model100)
+- [model01_qmk](https://github.com/qmk/qmk_firmware/tree/master/keyboards/keyboardio/model01)
 
 ## Install
 

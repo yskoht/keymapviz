@@ -27,6 +27,8 @@ import keymapviz.keyboards.planck
 import keymapviz.keyboards.dactyl_manuform6x6
 import keymapviz.keyboards.id75
 import keymapviz.keyboards.ferris
+import keymapviz.keyboards.model01
+import keymapviz.keyboards.model01_qmk
 
 
 KEYBOARDS = {
@@ -52,6 +54,8 @@ KEYBOARDS = {
     'dactyl_manuform6x6': keymapviz.keyboards.dactyl_manuform6x6,
     'id75': keymapviz.keyboards.id75,
     'ferris': keymapviz.keyboards.ferris,
+    'model01': keymapviz.keyboards.model01,
+    'model01_qmk': keymapviz.keyboards.model01_qmk,
 }
 
 
@@ -97,7 +101,7 @@ class Keymapviz():
 
 
     def __legends(self, keymap):
-        return [self.legends.get(_, re.sub(r'^KC_', '', _)) for _ in keymap] + [''] * 100  # FIXME :_(
+        return [self.legends.get(_, re.sub(r'^(KC_|Key_)', '', _)) for _ in keymap] + [''] * 100  # FIXME :_(
 
 
     def __json_format(self, json_, keymap):
