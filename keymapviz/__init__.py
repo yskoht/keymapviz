@@ -80,7 +80,7 @@ class Keymapviz():
             r'\s*(\w+(?<rec>\((?:[^()]|(?&rec))*\))*)\s*,?'
         )
         keymaps = keymap_regexp.findall(src)
-        keymaps = [_.lstrip('(').rstrip(')') for _ in keymaps]
+        keymaps = [re.sub(r"^\(?(.*)\)?$", r"\1", _) for _ in keymaps]
         keymaps = [[__[0] for __ in keycode_regexp.findall(_)] for _ in keymaps]
         return keymaps
 
