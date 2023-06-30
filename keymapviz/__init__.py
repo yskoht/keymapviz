@@ -103,7 +103,7 @@ class Keymapviz():
     def __json_format(self, json_, keymap):
         legends = self.__legends(keymap)
         ret = [[_.format(*legends) if isinstance(_, str) else _ for _ in __]
-               for __ in json_]
+               if isinstance(__, list) else __ for __ in json_]
         with io.StringIO() as sio:
             json.dump(ret, sio, indent=4)
             ret_str = sio.getvalue()
