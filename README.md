@@ -131,8 +131,10 @@ $ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -c /path/
 
 An example file is provided in the root of this project, named `config.properties`.
 
-Output json file.
-This json file can be used in [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/).
+### Output json file
+
+A json file can be generated that can be used in [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/)
+to visualize keymap. However, keymapviz will always generate one json file per layer.
 
 ```sh
 $ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
@@ -178,10 +180,24 @@ $ keymapviz -t fancy qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/ke
 
 ### Replace ascii-art in keymap.c
 
-Generate backup as keymap.c.bac
+The generated ascii-art can be written directly into the source code file with the option `-r`.
+
+For each keymap a comment block containing the string `[keymapviz]` needs to be
+added to the source code. That block will then be replaced with the result of
+the current run.
+
+A backup file of the source file will be created with the suffix `.bac`.
 
 ```sh
 $ keymapviz -r keymap.c
+```
+
+### Usage help
+
+To get a list of all options and all supported layouts call keymapviz with the `-h` option.
+
+```sh
+$ keymapviz -h
 ```
 
 ## Contributing
