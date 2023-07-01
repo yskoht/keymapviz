@@ -131,8 +131,10 @@ $ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -c /path/
 
 An example file is provided in the root of this project, named `config.properties`.
 
-Output json file.
-This json file can be used in [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/).
+### Output json file
+
+A json file can be generated that can be used in [http://www.keyboard-layout-editor.com/](http://www.keyboard-layout-editor.com/)
+to visualize keymap. However, keymapviz will always generate one json file per layer.
 
 ```sh
 $ keymapviz qmk_firmware/keyboards/lets_split/keymaps/default/keymap.c -t json -o 'lets_split{}.json'
