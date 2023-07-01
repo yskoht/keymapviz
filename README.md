@@ -192,6 +192,14 @@ A backup file of the source file will be created with the suffix `.bac`.
 $ keymapviz -r keymap.c
 ```
 
+### Usage help
+
+To get a list of all options and all supported layouts call keymapviz with the `-h` option.
+
+```sh
+$ keymapviz -h
+```
+
 ## Contributing
 
 Please see [CONTRIBUTING.md](./CONTRIBUTING.md).
