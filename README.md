@@ -178,7 +178,13 @@ $ keymapviz -t fancy qmk_firmware/keyboards/kbdclack/kaishi65/keymaps/default/ke
 
 ### Replace ascii-art in keymap.c
 
-Generate backup as keymap.c.bac
+The generated ascii-art can be written directly into the source code file with the option `-r`.
+
+For each keymap a comment block containing the string `[keymapviz]` needs to be
+added to the source code. That block will then be replaced with the result of
+the current run.
+
+A backup file of the source file will be created with the suffix `.bac`.
 
 ```sh
 $ keymapviz -r keymap.c
